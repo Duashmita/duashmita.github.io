@@ -29,46 +29,38 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-24 px-4">
+    <section id="projects" className="py-16 px-4">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-16">
-          <h2 className="mb-4">Featured Projects</h2>
-          <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Here are some of the projects I've worked on recently
-          </p>
-        </div>
+        <h2 className="text-3xl md:text-4xl font-bold text-primary mb-12">
+          Technical Works
+        </h2>
         
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="space-y-16">
           {projects.map((project, index) => (
-            <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:border-primary/50">
-              <CardHeader>
-                <CardTitle className="group-hover:text-primary transition-colors">
-                  {project.title}
-                </CardTitle>
-                <CardDescription>{project.description}</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tags.map((tag, tagIndex) => (
-                    <Badge key={tagIndex} variant="secondary">{tag}</Badge>
-                  ))}
-                </div>
-                <div className="flex gap-2">
-                  <Button size="sm" variant="default" asChild>
+            <div key={index} className="space-y-6">
+              <div className="bg-card rounded-lg p-6 md:p-8 border border-border">
+                <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4 mb-4">
+                  <div>
+                    <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
+                      {project.title}
+                    </h3>
+                    <p className="text-muted-foreground text-lg">
+                      {project.description}
+                    </p>
+                    <div className="flex gap-3 mt-3 text-sm text-muted-foreground font-mono">
+                      {project.tags.map((tag, tagIndex) => (
+                        <span key={tagIndex}>{tag}</span>
+                      ))}
+                    </div>
+                  </div>
+                  <Button variant="default" size="lg" asChild className="shrink-0">
                     <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="gap-2">
-                      <ExternalLink className="h-4 w-4" />
-                      Live
-                    </a>
-                  </Button>
-                  <Button size="sm" variant="outline" asChild>
-                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="gap-2">
-                      <Github className="h-4 w-4" />
-                      Code
+                      Check it out →
                     </a>
                   </Button>
                 </div>
-              </CardContent>
-            </Card>
+              </div>
+            </div>
           ))}
         </div>
       </div>

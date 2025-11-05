@@ -4,59 +4,29 @@ import heroBg from "@/assets/hero-bg.jpg";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div 
-        className="absolute inset-0 opacity-20"
-        style={{
-          backgroundImage: `url(${heroBg})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      />
-      <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/80 to-background" />
-      
-      <div className="container relative z-10 px-4 py-32">
-        <div className="max-w-4xl mx-auto text-center space-y-8">
-          <div className="space-y-4">
-            <p className="text-primary font-mono text-sm md:text-base animate-in fade-in slide-in-from-bottom-4 duration-1000">
-              👋 Hey, I'm
-            </p>
-            <h1 className="text-gradient animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-150">
-              Your Name
-            </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-300">
-              Developer, designer, and problem solver making innovative web applications
-            </p>
-          </div>
-          
-          <div className="flex items-center justify-center gap-4 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-500">
-            <Button size="lg" asChild>
-              <a href="#projects" className="gap-2">
-                View Projects <ArrowRight className="h-4 w-4" />
-              </a>
-            </Button>
-            <Button size="lg" variant="outline" asChild>
-              <a href="#about">About Me</a>
-            </Button>
-          </div>
-          
-          <div className="flex items-center justify-center gap-4 pt-4 animate-in fade-in slide-in-from-bottom-4 duration-1000 delay-700">
-            <Button size="icon" variant="ghost" asChild>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                <Github className="h-5 w-5" />
-              </a>
-            </Button>
-            <Button size="icon" variant="ghost" asChild>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                <Linkedin className="h-5 w-5" />
-              </a>
-            </Button>
-            <Button size="icon" variant="ghost" asChild>
-              <a href="mailto:hello@example.com" aria-label="Email">
-                <Mail className="h-5 w-5" />
-              </a>
-            </Button>
-          </div>
+    <section className="relative bg-primary overflow-hidden">
+      <div className="container mx-auto px-4 py-24 md:py-32">
+        <div className="max-w-4xl">
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+            Here's a selection of my favorite projects.
+          </h1>
+          <p className="text-lg md:text-xl text-white/90 max-w-2xl font-mono">
+            Whether it's solving a problem, creating a community, or just plain fun, 
+            I love developing projects that make our lives just a little bit better. 
+            Check out the apps I've created!
+          </p>
+        </div>
+        
+        <div className="absolute bottom-0 right-0 w-64 md:w-96 opacity-10">
+          <svg viewBox="0 0 200 200" className="text-white">
+            <rect x="50" y="80" width="60" height="40" fill="currentColor" stroke="currentColor" strokeWidth="3"/>
+            <rect x="90" y="50" width="40" height="30" fill="currentColor" stroke="currentColor" strokeWidth="3"/>
+            <circle cx="70" cy="50" r="15" fill="currentColor" stroke="currentColor" strokeWidth="3"/>
+            <rect x="60" y="130" width="15" height="40" fill="currentColor" stroke="currentColor" strokeWidth="3"/>
+            <rect x="95" y="130" width="15" height="40" fill="currentColor" stroke="currentColor" strokeWidth="3"/>
+            <line x1="70" y1="65" x2="70" y2="80" stroke="currentColor" strokeWidth="3"/>
+            <line x1="100" y1="80" x2="110" y2="70" stroke="currentColor" strokeWidth="3"/>
+          </svg>
         </div>
       </div>
     </section>

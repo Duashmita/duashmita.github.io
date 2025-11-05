@@ -68,9 +68,12 @@ const Projects = () => {
                     <h3 className="text-3xl md:text-5xl font-bold text-primary">
                       {project.title}
                     </h3>
-                    <p className="text-lg text-muted-foreground">
-                      {project.slogan}
-                    </p>
+                    <div className="space-y-2">
+                      <p className="text-lg text-muted-foreground">
+                        {project.slogan}
+                      </p>
+                      <div className="w-12 h-px bg-muted-foreground/30"></div>
+                    </div>
                     <div className="flex gap-4 text-sm text-muted-foreground font-mono">
                       <span>{project.skills}</span>
                       <span>•</span>

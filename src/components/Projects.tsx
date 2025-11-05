@@ -58,8 +58,8 @@ const Projects = () => {
         <div className="space-y-32">
           {projects.map((project, index) => (
             <div key={index} className="space-y-6">
-              {/* Sticky Header */}
-              <div className="sticky top-20 z-10 bg-background py-4 border-b border-border">
+              {/* Sticky Header with Liquid Glass */}
+              <div className="sticky top-20 z-10 glass py-6 px-6 rounded-lg animate-fade-in">
                 <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
                   <div className="space-y-2">
                     <h3 className="text-3xl md:text-5xl font-bold text-foreground">
@@ -68,13 +68,13 @@ const Projects = () => {
                     <p className="text-lg text-muted-foreground">
                       {project.slogan}
                     </p>
-                    <div className="flex gap-4 text-sm text-muted-foreground">
+                    <div className="flex gap-4 text-sm text-muted-foreground font-mono">
                       <span>{project.skills}</span>
                       <span>•</span>
                       <span>{project.date}</span>
                     </div>
                   </div>
-                  <Button variant="default" size="lg" asChild className="shrink-0">
+                  <Button variant="default" size="lg" asChild className="shrink-0 hover-scale">
                     <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="gap-2">
                       Check it out →
                     </a>

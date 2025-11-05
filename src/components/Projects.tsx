@@ -63,51 +63,55 @@ const Projects = () => {
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-3xl md:text-4xl font-bold text-primary mb-12">My Projects</h2>
         
-        <div className="space-y-16">
-          {projects.map((project, index) => <div key={index} className="space-y-6">
-              <div className="bg-card rounded-lg border border-border overflow-hidden">
-                {/* Sticky Header */}
-                <div className="sticky top-0 z-10 bg-card/95 backdrop-blur-sm border-b border-border p-6 md:p-8">
-                  <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
-                    <div>
-                      <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-2">
-                        {project.title}
-                      </h3>
-                      <p className="text-muted-foreground text-lg">
-                        {project.description}
-                      </p>
-                      <div className="flex gap-3 mt-3 text-sm text-muted-foreground font-mono">
-                        {project.tags.map((tag, tagIndex) => <span key={tagIndex}>{tag}</span>)}
-                      </div>
-                    </div>
-                    <Button variant="default" size="lg" asChild className="shrink-0">
-                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="gap-2">
-                        Check it out →
-                      </a>
-                    </Button>
-                  </div>
-                </div>
-
-                {/* Scrollable Content Area */}
-                <div className="p-6 md:p-8 space-y-6">
-                  {project.detailedContent.map((content, contentIndex) => (
-                    <div key={contentIndex}>
-                      {content.type === "text" ? (
-                        <p className="text-muted-foreground leading-relaxed text-base">
-                          {content.content}
-                        </p>
-                      ) : (
-                        <img 
-                          src={content.src} 
-                          alt={content.alt}
-                          className="w-full rounded-lg border border-border"
-                        />
-                      )}
-                    </div>
-                  ))}
+        <div className="space-y-32">
+          {projects.map((project, index) => (
+            <div key={index} className="space-y-6">
+              {/* Sticky Header */}
+              <div className="sticky top-20 z-10 bg-background py-4">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+                  <h3 className="text-3xl md:text-5xl font-bold text-foreground">
+                    {project.title}
+                  </h3>
+                  <Button variant="default" size="lg" asChild className="shrink-0">
+                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="gap-2">
+                      Check it out →
+                    </a>
+                  </Button>
                 </div>
               </div>
-            </div>)}
+
+              {/* Content Area with side-by-side layout */}
+              <div className="space-y-16">
+                {project.detailedContent.map((content, contentIndex) => (
+                  <div key={contentIndex} className="grid md:grid-cols-2 gap-8 items-start">
+                    {content.type === "image" ? (
+                      <>
+                        <div className="order-1">
+                          <img 
+                            src={content.src} 
+                            alt={content.alt}
+                            className="w-full rounded-lg border border-border"
+                          />
+                        </div>
+                        <div className="order-2"></div>
+                      </>
+                    ) : (
+                      <>
+                        <div className="order-1 md:order-2">
+                          <div className="md:sticky md:top-40">
+                            <p className="text-muted-foreground leading-relaxed text-lg">
+                              {content.content}
+                            </p>
+                          </div>
+                        </div>
+                        <div className="order-2 md:order-1"></div>
+                      </>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>;

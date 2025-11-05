@@ -64,13 +64,13 @@ const Blog = () => {
             </p>
           </div>
           
-          <div className="space-y-4 max-w-4xl mx-auto">
+          <div className="space-y-6 max-w-4xl mx-auto">
             {blogPosts.map((post, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:border-primary/50">
+              <Card key={index} className="glass group hover:shadow-xl transition-all duration-300 hover:border-primary/50 animate-fade-in">
                 <CardHeader>
                   <div className="flex items-start justify-between gap-4">
                     <div className="flex-1 space-y-3">
-                      <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                      <div className="flex items-center gap-4 text-sm text-muted-foreground font-mono">
                         <span className="flex items-center gap-1">
                           <Calendar className="h-4 w-4" />
                           {new Date(post.date).toLocaleDateString('en-US', { 
@@ -96,7 +96,7 @@ const Blog = () => {
                         ))}
                       </div>
                     </div>
-                    <Button variant="ghost" className="group/btn shrink-0">
+                    <Button variant="ghost" className="group/btn shrink-0 hover-scale">
                       Read More
                       <ArrowRight className="h-4 w-4 ml-2 transition-transform group-hover/btn:translate-x-1" />
                     </Button>

@@ -64,42 +64,44 @@ const Blog = () => {
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="space-y-4 max-w-4xl mx-auto">
             {blogPosts.map((post, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:border-primary/50 flex flex-col">
+              <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:border-primary/50">
                 <CardHeader>
-                  <div className="flex items-center gap-4 text-sm text-muted-foreground mb-3">
-                    <span className="flex items-center gap-1">
-                      <Calendar className="h-4 w-4" />
-                      {new Date(post.date).toLocaleDateString('en-US', { 
-                        month: 'short', 
-                        day: 'numeric', 
-                        year: 'numeric' 
-                      })}
-                    </span>
-                    <span className="flex items-center gap-1">
-                      <Clock className="h-4 w-4" />
-                      {post.readTime}
-                    </span>
+                  <div className="flex items-start justify-between gap-4">
+                    <div className="flex-1 space-y-3">
+                      <div className="flex items-center gap-4 text-sm text-muted-foreground">
+                        <span className="flex items-center gap-1">
+                          <Calendar className="h-4 w-4" />
+                          {new Date(post.date).toLocaleDateString('en-US', { 
+                            month: 'short', 
+                            day: 'numeric', 
+                            year: 'numeric' 
+                          })}
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <Clock className="h-4 w-4" />
+                          {post.readTime}
+                        </span>
+                      </div>
+                      <CardTitle className="group-hover:text-primary transition-colors">
+                        {post.title}
+                      </CardTitle>
+                      <CardDescription>{post.excerpt}</CardDescription>
+                      <div className="flex flex-wrap gap-2">
+                        {post.tags.map((tag, tagIndex) => (
+                          <Badge key={tagIndex} variant="secondary" className="text-xs">
+                            {tag}
+                          </Badge>
+                        ))}
+                      </div>
+                    </div>
+                    <Button variant="ghost" className="group/btn shrink-0">
+                      Read More
+                      <ArrowRight className="h-4 w-4 ml-2 transition-transform group-hover/btn:translate-x-1" />
+                    </Button>
                   </div>
-                  <CardTitle className="group-hover:text-primary transition-colors">
-                    {post.title}
-                  </CardTitle>
-                  <CardDescription>{post.excerpt}</CardDescription>
                 </CardHeader>
-                <CardContent className="mt-auto">
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {post.tags.map((tag, tagIndex) => (
-                      <Badge key={tagIndex} variant="secondary" className="text-xs">
-                        {tag}
-                      </Badge>
-                    ))}
-                  </div>
-                  <Button variant="ghost" className="group/btn w-full justify-between">
-                    Read More
-                    <ArrowRight className="h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
-                  </Button>
-                </CardContent>
               </Card>
             ))}
           </div>

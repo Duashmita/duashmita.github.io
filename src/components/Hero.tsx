@@ -5,8 +5,8 @@ const Hero = () => {
   return <section className="relative bg-primary overflow-hidden">
       <div className="container mx-auto px-4 py-24 md:py-32">
         <div className="max-w-4xl">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">Hi! I am Ash</h1>
-          <p className="text-lg md:text-xl text-white/90 max-w-2xl font-mono">Short for Ashmita Dua, a student at UCSC who is highly interested in Ai and game design. Espestially theri interaction</p>
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">Hi! I am Ashmita Dua</h1>
+          <p className="text-lg md:text-xl text-white/90 max-w-2xl font-mono">Computer Science student at UC Santa Cruz specializing in Game Design, AI/ML, and creative technology</p>
         </div>
         
         <div className="absolute bottom-0 right-0 w-64 md:w-96 opacity-10">

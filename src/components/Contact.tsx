@@ -22,7 +22,26 @@ const Contact = () => {
         <Card>
           <CardHeader>
             <CardTitle>Send me a message</CardTitle>
-            <CardDescription>I'll get back to you as soon as possible</CardDescription>
+            <CardDescription>
+              <div className="space-y-4 mt-4">
+                <div className="flex items-center gap-3">
+                  <span className="text-sm text-muted-foreground">Email:</span>
+                  <a href="mailto:duashmita@gmail.com" className="text-foreground hover:text-primary transition-colors">
+                    duashmita@gmail.com
+                  </a>
+                </div>
+                <div className="flex items-center gap-3">
+                  <span className="text-sm text-muted-foreground">Location:</span>
+                  <span className="text-foreground">Santa Cruz, California</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <span className="text-sm text-muted-foreground">Phone:</span>
+                  <a href="tel:+14085987970" className="text-foreground hover:text-primary transition-colors">
+                    +1 (408) 598-7970
+                  </a>
+                </div>
+              </div>
+            </CardDescription>
           </CardHeader>
           <CardContent>
             <form onSubmit={handleSubmit} className="space-y-4">

@@ -3,56 +3,50 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 const projects = [{
-  title: "Project One",
-  slogan: "Everything you need to enroll in one place",
-  skills: "React + TypeScript",
-  date: "2024",
-  description: "A modern web application built with React and TypeScript",
-  tags: ["React", "TypeScript", "Tailwind CSS"],
+  title: "Woven - Mood-Based Storytelling LLM",
+  slogan: "Guiding emotions through storytelling",
+  skills: "Python + LLMs + NLP",
+  date: "2025",
+  description: "AI-powered narrative generation for emotional well-being",
+  tags: ["Python", "LLMs", "NLP"],
   liveUrl: "#",
   githubUrl: "#",
   sections: [
     {
-      image: "/placeholder.svg",
-      imageAlt: "Project screenshot",
-      text: "This project showcases a modern approach to web development using React and TypeScript. The application features a clean, responsive design and demonstrates best practices in component architecture."
+      image: "https://images.unsplash.com/photo-1455849318743-b2233052fcff",
+      imageAlt: "Emotion-driven narratives",
+      text: "Developed Woven, a mood-based LLM that generates personalized narratives by mapping users' current and target emotions. The system creates dynamic stories that gently guide emotional transitions."
     },
     {
-      image: "/placeholder.svg",
-      imageAlt: "Project features",
-      text: "Key features include real-time updates, seamless navigation, and optimized performance. Built with scalability in mind, the codebase is well-structured and maintainable."
+      image: "https://images.unsplash.com/photo-1516534775068-ba3e7458af70",
+      imageAlt: "Intelligent branching system",
+      text: "Designed branching prompts driven by emotion and user choices, creating an interactive storytelling experience that adapts to the user's emotional journey in real-time."
+    },
+    {
+      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c",
+      imageAlt: "Context management",
+      text: "Implemented session memory and summarization techniques to handle long contexts, ensuring coherent and engaging multi-turn storytelling experiences."
     }
   ]
 }, {
-  title: "Project Two",
-  slogan: "Shop smart, shop fast",
-  skills: "Next.js + Node.js",
-  date: "2023",
-  description: "Full-stack e-commerce platform with real-time features",
-  tags: ["Next.js", "Node.js", "PostgreSQL"],
+  title: "ASL Decoder CNN Model",
+  slogan: "Breaking communication barriers with AI",
+  skills: "Python + PyTorch + CNNs",
+  date: "2024",
+  description: "Real-time American Sign Language recognition",
+  tags: ["Python", "PyTorch", "CNNs"],
   liveUrl: "#",
   githubUrl: "#",
   sections: [
     {
-      image: "/placeholder.svg",
-      imageAlt: "E-commerce platform screenshot",
-      text: "A comprehensive e-commerce solution built with modern technologies. Features include product management, shopping cart, and secure checkout process."
-    }
-  ]
-}, {
-  title: "Project Three",
-  slogan: "AI-powered content at your fingertips",
-  skills: "Python + OpenAI",
-  date: "2023",
-  description: "AI-powered tool for content generation and analysis",
-  tags: ["Python", "OpenAI", "FastAPI"],
-  liveUrl: "#",
-  githubUrl: "#",
-  sections: [
+      image: "https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1",
+      imageAlt: "Real-time ASL recognition",
+      text: "Designed a CNN-based system for real-time American Sign Language (ASL) recognition using live video inputs, making communication more accessible."
+    },
     {
-      image: "/placeholder.svg",
-      imageAlt: "AI tool interface",
-      text: "Leveraging the power of AI to automate content creation and provide intelligent analysis. This tool integrates with OpenAI's API to deliver high-quality results."
+      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
+      imageAlt: "Advanced optimization",
+      text: "Applied data augmentation techniques and optimized CNN architecture to enhance accuracy and performance, ensuring reliable recognition across various lighting and hand positions."
     }
   ]
 }];

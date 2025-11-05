@@ -8,81 +8,82 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 200 20% 98%;
-    --foreground: 200 15% 10%;
+    --background: 210 20% 96%;
+    --foreground: 210 15% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 200 15% 10%;
+    --card-foreground: 210 15% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 200 15% 10%;
+    --popover-foreground: 210 15% 20%;
 
-    --primary: 185 80% 45%;
+    --primary: 200 80% 60%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 200 15% 92%;
-    --secondary-foreground: 200 15% 10%;
+    --secondary: 210 15% 92%;
+    --secondary-foreground: 210 15% 20%;
 
-    --muted: 200 15% 95%;
-    --muted-foreground: 200 10% 45%;
+    --muted: 210 15% 94%;
+    --muted-foreground: 210 10% 50%;
 
-    --accent: 185 80% 45%;
+    --accent: 200 80% 60%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 200 15% 88%;
-    --input: 200 15% 88%;
-    --ring: 185 80% 45%;
+    --border: 210 15% 85%;
+    --input: 210 15% 85%;
+    --ring: 200 80% 60%;
 
-    --radius: 0.75rem;
+    --radius: 1rem;
 
-    /* Custom design tokens */
-    --gradient-primary: linear-gradient(135deg, hsl(185 80% 45%), hsl(200 80% 55%));
-    --gradient-dark: linear-gradient(135deg, hsl(200 20% 12%), hsl(200 25% 18%));
-    --shadow-glow: 0 0 30px hsl(185 80% 45% / 0.3);
-    --shadow-soft: 0 4px 20px hsl(200 15% 10% / 0.1);
+    /* Custom design tokens - Sky Blue & Grey */
+    --gradient-primary: linear-gradient(135deg, hsl(200 80% 60%), hsl(210 70% 65%));
+    --gradient-glass: linear-gradient(135deg, hsl(0 0% 100% / 0.1), hsl(0 0% 100% / 0.05));
+    --shadow-glow: 0 0 40px hsl(200 80% 60% / 0.3);
+    --shadow-glass: 0 8px 32px hsl(0 0% 0% / 0.1);
+    --glass-border: hsl(0 0% 100% / 0.18);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .dark {
-    --background: 0 0% 15%;
+    --background: 220 15% 12%;
     --foreground: 0 0% 98%;
 
-    --card: 0 0% 18%;
+    --card: 220 15% 16%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 18%;
+    --popover: 220 15% 16%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 4 81% 61%;
+    --primary: 200 80% 60%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 22%;
+    --secondary: 220 15% 20%;
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 0 0% 22%;
-    --muted-foreground: 0 0% 65%;
+    --muted: 220 15% 20%;
+    --muted-foreground: 0 0% 70%;
 
-    --accent: 4 81% 61%;
+    --accent: 200 80% 60%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 50.6%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 25%;
-    --input: 0 0% 25%;
-    --ring: 4 81% 61%;
+    --border: 220 15% 25%;
+    --input: 220 15% 25%;
+    --ring: 200 80% 60%;
 
-    --sidebar-background: 0 0% 18%;
+    --sidebar-background: 220 15% 16%;
     --sidebar-foreground: 0 0% 90%;
-    --sidebar-primary: 4 81% 61%;
+    --sidebar-primary: 200 80% 60%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 0 0% 22%;
+    --sidebar-accent: 220 15% 20%;
     --sidebar-accent-foreground: 0 0% 90%;
-    --sidebar-border: 0 0% 25%;
-    --sidebar-ring: 4 81% 61%;
+    --sidebar-border: 220 15% 25%;
+    --sidebar-ring: 200 80% 60%;
   }
 }
 
@@ -123,5 +124,21 @@ All colors MUST be HSL.
 
   .glow {
     text-shadow: var(--shadow-glow);
+  }
+
+  .glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: var(--shadow-glass);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: var(--shadow-glass);
   }
 }

@@ -80,35 +80,35 @@ const Projects = () => {
                 </div>
               </div>
 
-              {/* Content Area with side-by-side layout */}
-              <div className="space-y-16">
-                {project.detailedContent.map((content, contentIndex) => (
-                  <div key={contentIndex} className="grid md:grid-cols-2 gap-8 items-start">
-                    {content.type === "image" ? (
-                      <>
-                        <div className="order-1">
+              {/* Content Area with alternating layout */}
+              <div className="space-y-12">
+                {project.detailedContent.map((content, contentIndex) => {
+                  const isEven = contentIndex % 2 === 0;
+                  
+                  if (content.type === "image") {
+                    return (
+                      <div key={contentIndex} className="grid md:grid-cols-2 gap-12 items-center">
+                        <div className={isEven ? "md:order-1" : "md:order-2"}>
                           <img 
                             src={content.src} 
                             alt={content.alt}
                             className="w-full rounded-lg border border-border"
                           />
                         </div>
-                        <div className="order-2"></div>
-                      </>
-                    ) : (
-                      <>
-                        <div className="order-1 md:order-2">
-                          <div className="md:sticky md:top-40">
-                            <p className="text-muted-foreground leading-relaxed text-lg">
-                              {content.content}
-                            </p>
-                          </div>
-                        </div>
-                        <div className="order-2 md:order-1"></div>
-                      </>
-                    )}
-                  </div>
-                ))}
+                      </div>
+                    );
+                  }
+                  
+                  return (
+                    <div key={contentIndex} className="grid md:grid-cols-2 gap-12 items-center">
+                      <div className={isEven ? "md:order-2" : "md:order-1"}>
+                        <p className="text-muted-foreground leading-relaxed text-lg">
+                          {content.content}
+                        </p>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
           ))}

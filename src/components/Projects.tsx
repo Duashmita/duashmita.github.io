@@ -60,55 +60,64 @@ const Projects = () => {
         
         <div className="space-y-32">
           {projects.map((project, index) => (
-            <div key={index} className="space-y-6">
-              {/* Sticky Header with Liquid Glass */}
-              <div className="sticky top-20 z-10 glass py-6 px-6 rounded-lg animate-fade-in">
-                <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
-                  <div className="space-y-3">
-                    <h3 className="text-3xl md:text-5xl font-bold text-primary">
-                      {project.title}
-                    </h3>
-                    <p className="text-lg text-muted-foreground">
-                      {project.slogan}
-                    </p>
-                    <div className="flex gap-4 text-sm text-muted-foreground font-mono">
-                      <span>{project.skills}</span>
-                      <span>•</span>
-                      <span>{project.date}</span>
+            <div key={index}>
+              <div className="space-y-6">
+                {/* Sticky Header with Liquid Glass */}
+                <div className="sticky top-20 z-10 glass py-6 px-6 rounded-lg animate-fade-in">
+                  <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
+                    <div className="space-y-2">
+                      <h3 className="text-3xl md:text-5xl font-bold text-primary">
+                        {project.title}
+                      </h3>
+                      <div className="space-y-2">
+                        <p className="text-lg text-muted-foreground">
+                          {project.slogan}
+                        </p>
+                        <div className="w-12 h-px bg-muted-foreground/30"></div>
+                      </div>
+                      <div className="flex gap-4 text-sm text-muted-foreground font-mono">
+                        <span>{project.skills}</span>
+                        <span>•</span>
+                        <span>{project.date}</span>
+                      </div>
                     </div>
-                    <div className="w-16 h-px bg-muted-foreground/30 mt-2"></div>
+                    <Button variant="default" size="lg" asChild className="shrink-0 hover-scale">
+                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="gap-2">
+                        Check it out →
+                      </a>
+                    </Button>
                   </div>
-                  <Button variant="default" size="lg" asChild className="shrink-0 hover-scale">
-                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="gap-2">
-                      Check it out →
-                    </a>
-                  </Button>
+                </div>
+
+                {/* Content Area with image and text in same row */}
+                <div className="space-y-12">
+                  {project.sections.map((section, sectionIndex) => {
+                    const isEven = sectionIndex % 2 === 0;
+                    
+                    return (
+                      <div key={sectionIndex} className="grid md:grid-cols-2 gap-12 items-center">
+                        <div className={isEven ? "md:order-1" : "md:order-2"}>
+                          <img 
+                            src={section.image} 
+                            alt={section.imageAlt}
+                            className="w-full rounded-lg border border-border"
+                          />
+                        </div>
+                        <div className={isEven ? "md:order-2" : "md:order-1"}>
+                          <p className="text-muted-foreground leading-relaxed text-lg">
+                            {section.text}
+                          </p>
+                        </div>
+                      </div>
+                    );
+                  })}
                 </div>
               </div>
-
-              {/* Content Area with image and text in same row */}
-              <div className="space-y-12">
-                {project.sections.map((section, sectionIndex) => {
-                  const isEven = sectionIndex % 2 === 0;
-                  
-                  return (
-                    <div key={sectionIndex} className="grid md:grid-cols-2 gap-12 items-center">
-                      <div className={isEven ? "md:order-1" : "md:order-2"}>
-                        <img 
-                          src={section.image} 
-                          alt={section.imageAlt}
-                          className="w-full rounded-lg border border-border"
-                        />
-                      </div>
-                      <div className={isEven ? "md:order-2" : "md:order-1"}>
-                        <p className="text-muted-foreground leading-relaxed text-lg">
-                          {section.text}
-                        </p>
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
+              
+              {/* Separator between projects */}
+              {index < projects.length - 1 && (
+                <div className="w-full h-px bg-muted-foreground/20 mt-32"></div>
+              )}
             </div>
           ))}
         </div>

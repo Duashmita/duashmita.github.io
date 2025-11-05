@@ -53,7 +53,10 @@ const projects = [{
 const Projects = () => {
   return <section id="projects" className="py-16 px-4">
       <div className="container mx-auto max-w-6xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-primary mb-12">My Projects</h2>
+        <div className="flex items-center gap-4 mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary">My Projects</h2>
+          <div className="flex-1 h-1 bg-primary"></div>
+        </div>
         
         <div className="space-y-32">
           {projects.map((project, index) => (
@@ -62,7 +65,7 @@ const Projects = () => {
               <div className="sticky top-20 z-10 glass py-6 px-6 rounded-lg animate-fade-in">
                 <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
                   <div className="space-y-2">
-                    <h3 className="text-3xl md:text-5xl font-bold text-foreground">
+                    <h3 className="text-3xl md:text-5xl font-bold text-primary border-4 border-primary p-4 inline-block">
                       {project.title}
                     </h3>
                     <p className="text-lg text-muted-foreground">

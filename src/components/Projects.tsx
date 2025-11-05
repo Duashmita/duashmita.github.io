@@ -65,7 +65,7 @@ const Projects = () => {
               <div className="sticky top-20 z-10 glass py-6 px-6 rounded-lg animate-fade-in">
                 <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
                   <div className="space-y-2">
-                    <h3 className="text-3xl md:text-5xl font-bold text-primary border-4 border-primary p-4 inline-block">
+                    <h3 className="text-3xl md:text-5xl font-bold text-primary">
                       {project.title}
                     </h3>
                     <p className="text-lg text-muted-foreground">

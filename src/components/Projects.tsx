@@ -51,7 +51,7 @@ const projects = [{
   ]
 }];
 const Projects = () => {
-  return <section id="projects" className="py-16 px-4">
+  return <section id="projects" className="pt-8 pb-16 px-4">
       <div className="container mx-auto max-w-6xl">
         <div className="flex items-center gap-4 mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-primary">My Projects</h2>

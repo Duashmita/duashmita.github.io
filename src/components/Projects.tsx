@@ -64,21 +64,19 @@ const Projects = () => {
               {/* Sticky Header with Liquid Glass */}
               <div className="sticky top-20 z-10 glass py-6 px-6 rounded-lg animate-fade-in">
                 <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4">
-                  <div className="space-y-2">
+                  <div className="space-y-3">
                     <h3 className="text-3xl md:text-5xl font-bold text-primary">
                       {project.title}
                     </h3>
-                    <div className="space-y-2">
-                      <p className="text-lg text-muted-foreground">
-                        {project.slogan}
-                      </p>
-                      <div className="w-12 h-px bg-muted-foreground/30"></div>
-                    </div>
+                    <p className="text-lg text-muted-foreground">
+                      {project.slogan}
+                    </p>
                     <div className="flex gap-4 text-sm text-muted-foreground font-mono">
                       <span>{project.skills}</span>
                       <span>•</span>
                       <span>{project.date}</span>
                     </div>
+                    <div className="w-16 h-px bg-muted-foreground/30 mt-2"></div>
                   </div>
                   <Button variant="default" size="lg" asChild className="shrink-0 hover-scale">
                     <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="gap-2">

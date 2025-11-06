@@ -17,7 +17,7 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 210 15% 20%;
 
-    --primary: 200 80% 60%;
+    --primary: 220 80% 55%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 210 15% 92%;
@@ -26,7 +26,7 @@ All colors MUST be HSL.
     --muted: 210 15% 94%;
     --muted-foreground: 210 10% 50%;
 
-    --accent: 200 80% 60%;
+    --accent: 220 80% 55%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -34,14 +34,14 @@ All colors MUST be HSL.
 
     --border: 210 15% 85%;
     --input: 210 15% 85%;
-    --ring: 200 80% 60%;
+    --ring: 220 80% 55%;
 
     --radius: 1rem;
 
-    /* Custom design tokens - Sky Blue & Grey */
-    --gradient-primary: linear-gradient(135deg, hsl(200 80% 60%), hsl(210 70% 65%));
+    /* Custom design tokens - Royal Blue */
+    --gradient-primary: linear-gradient(135deg, hsl(220 80% 55%), hsl(230 75% 60%));
     --gradient-glass: linear-gradient(135deg, hsl(0 0% 100% / 0.1), hsl(0 0% 100% / 0.05));
-    --shadow-glow: 0 0 40px hsl(200 80% 60% / 0.3);
+    --shadow-glow: 0 0 40px hsl(220 80% 55% / 0.3);
     --shadow-glass: 0 8px 32px hsl(0 0% 0% / 0.1);
     --glass-border: hsl(0 0% 100% / 0.18);
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -57,7 +57,7 @@ All colors MUST be HSL.
     --popover: 220 15% 16%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 200 80% 60%;
+    --primary: 220 80% 55%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 220 15% 20%;
@@ -66,7 +66,7 @@ All colors MUST be HSL.
     --muted: 220 15% 20%;
     --muted-foreground: 0 0% 70%;
 
-    --accent: 200 80% 60%;
+    --accent: 220 80% 55%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 62.8% 50.6%;
@@ -74,16 +74,16 @@ All colors MUST be HSL.
 
     --border: 220 15% 25%;
     --input: 220 15% 25%;
-    --ring: 200 80% 60%;
+    --ring: 220 80% 55%;
 
     --sidebar-background: 220 15% 16%;
     --sidebar-foreground: 0 0% 90%;
-    --sidebar-primary: 200 80% 60%;
+    --sidebar-primary: 220 80% 55%;
     --sidebar-primary-foreground: 0 0% 100%;
     --sidebar-accent: 220 15% 20%;
     --sidebar-accent-foreground: 0 0% 90%;
     --sidebar-border: 220 15% 25%;
-    --sidebar-ring: 200 80% 60%;
+    --sidebar-ring: 220 80% 55%;
   }
 }
 

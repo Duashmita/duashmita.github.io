@@ -6,7 +6,25 @@ const Hero = () => {
       <div className="container mx-auto max-w-6xl px-0 py-24 md:py-32">
         <div className="max-w-4xl">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">Hi! I am Ashmita Dua</h1>
-          <p className="text-lg md:text-xl text-white/90 max-w-2xl font-mono">Computer Science student at UC Santa Cruz specializing in Game Design, AI/ML, and creative technology</p>
+          <p className="text-lg md:text-xl text-white/90 max-w-2xl font-mono mb-8">Computer Science student at UC Santa Cruz specializing in Game Design, AI/ML, and creative technology</p>
+          
+          <div className="flex gap-4">
+            <Button variant="outline" size="icon" className="bg-white/10 border-white/20 hover:bg-white/20 text-white" asChild>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <Linkedin className="h-5 w-5" />
+              </a>
+            </Button>
+            <Button variant="outline" size="icon" className="bg-white/10 border-white/20 hover:bg-white/20 text-white" asChild>
+              <a href="mailto:your.email@example.com">
+                <Mail className="h-5 w-5" />
+              </a>
+            </Button>
+            <Button variant="outline" size="icon" className="bg-white/10 border-white/20 hover:bg-white/20 text-white" asChild>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+                <Github className="h-5 w-5" />
+              </a>
+            </Button>
+          </div>
         </div>
         
         <div className="absolute bottom-0 right-0 w-64 md:w-96 opacity-10">

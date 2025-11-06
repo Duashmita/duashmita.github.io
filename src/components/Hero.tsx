@@ -9,19 +9,19 @@ const Hero = () => {
           <p className="text-lg md:text-xl text-white/90 max-w-2xl font-mono mb-8">Computer Science student at UC Santa Cruz specializing in Game Design, AI/ML, and creative technology</p>
           
           <div className="flex gap-4">
-            <Button variant="outline" size="icon" className="bg-white/10 border-white/20 hover:bg-white/20 text-white" asChild>
+            <Button variant="outline" size="icon" className="bg-white/10 border-white/20 hover:bg-white/20 text-white h-12 w-12" asChild>
               <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-                <Linkedin className="h-5 w-5" />
+                <Linkedin className="h-6 w-6" />
               </a>
             </Button>
-            <Button variant="outline" size="icon" className="bg-white/10 border-white/20 hover:bg-white/20 text-white" asChild>
+            <Button variant="outline" size="icon" className="bg-white/10 border-white/20 hover:bg-white/20 text-white h-12 w-12" asChild>
               <a href="mailto:your.email@example.com">
-                <Mail className="h-5 w-5" />
+                <Mail className="h-6 w-6" />
               </a>
             </Button>
-            <Button variant="outline" size="icon" className="bg-white/10 border-white/20 hover:bg-white/20 text-white" asChild>
+            <Button variant="outline" size="icon" className="bg-white/10 border-white/20 hover:bg-white/20 text-white h-12 w-12" asChild>
               <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-                <Github className="h-5 w-5" />
+                <Github className="h-6 w-6" />
               </a>
             </Button>
           </div>

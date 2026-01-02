@@ -5,7 +5,7 @@ import { ExternalLink, Github } from "lucide-react";
 const projects = [{
   title: "Woven - Mood-Based Storytelling LLM",
   slogan: "Guiding emotions through storytelling",
-  skills: "Python + LLMs + NLP",
+  skills: "LLMs + Prompt Engineering + RAG",
   date: "2025",
   description: "AI-powered narrative generation for emotional well-being",
   tags: ["Python", "LLMs", "NLP"],

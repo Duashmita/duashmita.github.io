@@ -71,8 +71,8 @@ const BlogPostPage = () => {
             </Button>
           </div>
 
-          <header className="mb-8 space-y-4">
-            <h1 className="text-balance">{post.title}</h1>
+          <header className="mb-10 space-y-4">
+            <h1 className="text-balance text-4xl md:text-5xl lg:text-6xl font-bold">{post.title}</h1>
 
             <div className="flex flex-wrap items-center gap-4 text-sm text-muted-foreground font-mono">
               <span className="flex items-center gap-1">
@@ -98,7 +98,7 @@ const BlogPostPage = () => {
             </div>
           </header>
 
-          <section className="prose prose-invert max-w-none">
+          <section className="prose prose-invert max-w-none space-y-6">
             {post.content.split("\n\n").map((paragraph, idx) => (
               <p key={idx} className="text-muted-foreground leading-relaxed">
                 {paragraph}

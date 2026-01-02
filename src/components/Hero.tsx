@@ -10,17 +10,17 @@ const Hero = () => {
           
           <div className="flex gap-4">
             <Button variant="outline" size="icon" className="bg-white/10 border-white/20 hover:bg-white/20 text-white h-12 w-12" asChild>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.linkedin.com/in/duashmita/" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="h-6 w-6" />
               </a>
             </Button>
             <Button variant="outline" size="icon" className="bg-white/10 border-white/20 hover:bg-white/20 text-white h-12 w-12" asChild>
-              <a href="mailto:your.email@example.com">
+              <a href="mailto:duashmita@gmail.com">
                 <Mail className="h-6 w-6" />
               </a>
             </Button>
             <Button variant="outline" size="icon" className="bg-white/10 border-white/20 hover:bg-white/20 text-white h-12 w-12" asChild>
-              <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/duashmita" target="_blank" rel="noopener noreferrer">
                 <Github className="h-6 w-6" />
               </a>
             </Button>

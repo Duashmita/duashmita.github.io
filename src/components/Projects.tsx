@@ -29,7 +29,7 @@ const projects = [{
     }
   ]
 }, {
-  title: "ASL Decoder CNN Model",
+  title: "Pewter Platformer",
   slogan: "Breaking communication barriers with AI",
   skills: "Python + PyTorch + CNNs",
   date: "2024",

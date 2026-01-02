@@ -1,40 +1,24 @@
-import { useRef } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
-import html2pdf from "html2pdf.js";
 
 const Resume = () => {
-  const resumeRef = useRef<HTMLDivElement>(null);
-
-  const handleDownloadPDF = () => {
-    if (!resumeRef.current) return;
-    
-    const opt = {
-      margin: 0.5,
-      filename: 'Ashmita_Dua_Resume.pdf',
-      image: { type: 'jpeg' as const, quality: 0.98 },
-      html2canvas: { scale: 2 },
-      jsPDF: { unit: 'in' as const, format: 'letter' as const, orientation: 'portrait' as const }
-    };
-    
-    html2pdf().set(opt).from(resumeRef.current).save();
-  };
-
   return <div className="min-h-screen">
       <Navbar />
       <main className="pt-24 px-4 pb-16">
         <div className="container mx-auto max-w-4xl">
           <div className="flex justify-between items-center mb-8">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground">Resume</h1>
-            <Button variant="default" size="lg" className="gap-2" onClick={handleDownloadPDF}>
-              <Download size={20} />
-              Download PDF
+            <Button variant="default" size="lg" className="gap-2" asChild>
+              <a href="/Ashmita_Dua_Resume.pdf" download="Ashmita_Dua_Resume.pdf">
+                <Download size={20} />
+                Download PDF
+              </a>
             </Button>
           </div>
 
-          <div ref={resumeRef} className="space-y-12">
+          <div className="space-y-12">
             {/* Education Section */}
             <section>
               <h2 className="text-2xl font-bold text-primary mb-6">Education</h2>

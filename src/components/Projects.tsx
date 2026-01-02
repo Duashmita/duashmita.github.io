@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 const projects = [{
   title: "Woven - Mood-Based Storytelling LLM",
-  slogan: "Guiding emotions through storytelling",
+  slogan: "Guiding emotions through interactive storytelling",
   skills: "LLMs + Prompt Engineering + RAG",
   date: "2025",
   description: "AI-powered narrative generation for emotional well-being",

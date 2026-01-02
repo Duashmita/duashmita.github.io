@@ -7,7 +7,7 @@ const skillCategories = [
   },
   {
     category: "AI/ML & Tools",
-    skills: ["PyTorch", "Keras", "Neural Networks", "CNNs", "NLP"],
+    skills: ["PyTorch", "Keras", "Neural Networks", "CNNs", "NLP", "RAG", "Langchain", "Finetuning"],
   },
   {
     category: "Design & Languages",

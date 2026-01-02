@@ -48,7 +48,20 @@ const Resume = () => {
                   </p>
                 </div>
 
-                
+                <div>
+                  <div className="flex justify-between items-start mb-2">
+                    <h3 className="text-xl font-semibold text-foreground">Undergrad Researcher</h3>
+                    <span className="text-muted-foreground font-mono text-sm">April 2025 - Present</span>
+                  </div>
+                  <p className="text-primary mb-2">Artificial Intelligence Explainability Accountability Lab</p>
+                  <ul className="text-muted-foreground leading-relaxed list-disc list-inside space-y-1">
+                    <li>Auditing the Lab through a 10-week independent study focused on LLM safety, logic translation, and inconsistency detection.</li>
+                    <li>Contributing to the LLM Logic project by setting up local environments (LLM API, SWI-Prolog).</li>
+                    <li>Building a knowledge base and curating UCSC-specific questions.</li>
+                  </ul>
+                </div>
+
+
 
                 <div>
                   <div className="flex justify-between items-start mb-2">

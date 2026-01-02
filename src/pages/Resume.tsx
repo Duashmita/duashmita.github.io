@@ -2,10 +2,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Download } from "lucide-react";
-
 const Resume = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Navbar />
       <main className="pt-24 px-4 pb-16">
         <div className="container mx-auto max-w-4xl">
@@ -41,7 +39,7 @@ const Resume = () => {
               <div className="space-y-8">
                 <div>
                   <div className="flex justify-between items-start mb-2">
-                    <h3 className="text-xl font-semibold text-foreground">Auditor</h3>
+                    <h3 className="text-xl font-semibold text-foreground">Undergraduate Researcher</h3>
                     <span className="text-muted-foreground font-mono text-sm">Sept 2025 - Present</span>
                   </div>
                   <p className="text-primary mb-2">Augmented Design Lab</p>
@@ -50,16 +48,7 @@ const Resume = () => {
                   </p>
                 </div>
 
-                <div>
-                  <div className="flex justify-between items-start mb-2">
-                    <h3 className="text-xl font-semibold text-foreground">Auditor</h3>
-                    <span className="text-muted-foreground font-mono text-sm">April 2025 - Present</span>
-                  </div>
-                  <p className="text-primary mb-2">Artificial Intelligence Explainability Accountability Lab</p>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Auditing the Lab through a 10-week independent study focused on LLM safety, logic translation, and inconsistency detection. Contributing to the LLM Logic project by setting up local environments (LLM API, SWI-Prolog). Building a knowledge base and curating UCSC-specific questions.
-                  </p>
-                </div>
+                
 
                 <div>
                   <div className="flex justify-between items-start mb-2">
@@ -112,31 +101,25 @@ const Resume = () => {
                 <div>
                   <h3 className="text-lg font-semibold text-foreground mb-3">Programming</h3>
                   <div className="flex flex-wrap gap-2">
-                    {["Python", "SQL", "HTML/CSS"].map((skill) => (
-                      <span key={skill} className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-mono">
+                    {["Python", "SQL", "HTML/CSS"].map(skill => <span key={skill} className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-mono">
                         {skill}
-                      </span>
-                    ))}
+                      </span>)}
                   </div>
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-foreground mb-3">AI/ML & Design</h3>
                   <div className="flex flex-wrap gap-2">
-                    {["PyTorch", "Keras", "Neural Networks", "Graphic Design"].map((skill) => (
-                      <span key={skill} className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-mono">
+                    {["PyTorch", "Keras", "Neural Networks", "Graphic Design"].map(skill => <span key={skill} className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-mono">
                         {skill}
-                      </span>
-                    ))}
+                      </span>)}
                   </div>
                 </div>
                 <div>
                   <h3 className="text-lg font-semibold text-foreground mb-3">Languages</h3>
                   <div className="flex flex-wrap gap-2">
-                    {["English", "Hindi", "German"].map((skill) => (
-                      <span key={skill} className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-mono">
+                    {["English", "Hindi", "German"].map(skill => <span key={skill} className="px-3 py-1 bg-primary/10 text-primary rounded-full text-sm font-mono">
                         {skill}
-                      </span>
-                    ))}
+                      </span>)}
                   </div>
                 </div>
               </div>
@@ -159,8 +142,6 @@ const Resume = () => {
         </div>
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Resume;

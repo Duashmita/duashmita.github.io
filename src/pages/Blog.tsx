@@ -13,41 +13,6 @@ const blogPosts = [
     readTime: "8 min read",
     tags: ["React", "TypeScript", "Architecture"],
   },
-  {
-    title: "Modern CSS Techniques in 2024",
-    excerpt: "Explore the latest CSS features and how to use them in production",
-    date: "2024-03-10",
-    readTime: "6 min read",
-    tags: ["CSS", "Web Design", "Frontend"],
-  },
-  {
-    title: "Introduction to Serverless Functions",
-    excerpt: "Understanding serverless architecture and how to deploy your first function",
-    date: "2024-03-05",
-    readTime: "10 min read",
-    tags: ["Serverless", "Backend", "Cloud"],
-  },
-  {
-    title: "The Power of TypeScript",
-    excerpt: "Why TypeScript is essential for modern web development",
-    date: "2024-02-28",
-    readTime: "7 min read",
-    tags: ["TypeScript", "JavaScript", "Development"],
-  },
-  {
-    title: "Optimizing Web Performance",
-    excerpt: "Tips and tricks to make your web applications blazingly fast",
-    date: "2024-02-20",
-    readTime: "9 min read",
-    tags: ["Performance", "Web", "Optimization"],
-  },
-  {
-    title: "Design Systems 101",
-    excerpt: "How to build and maintain a consistent design system",
-    date: "2024-02-15",
-    readTime: "12 min read",
-    tags: ["Design", "UI/UX", "System"],
-  },
 ];
 
 const Blog = () => {

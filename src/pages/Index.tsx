@@ -5,19 +5,15 @@ import Publications from "@/components/Publications";
 import Skills from "@/components/Skills";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
-
 const Index = () => {
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       <Navbar />
       <Hero />
       <Projects />
-      <Publications />
+      
       <Skills />
       <Contact />
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;

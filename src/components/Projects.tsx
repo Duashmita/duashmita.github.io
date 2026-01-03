@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 const projects = [{
   title: "Pewter Platformer",
-  slogan: "Diagnosing and fixing LLM failure modes",
+  slogan: "Diagnosing and fixing LLM validation loop failure",
   skills: "Prompt Engineering + LLMs + Prompt Flow",
   date: "Sep 2025 - Present",
   description: "LLM agent validation and guardrail system",

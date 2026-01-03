@@ -5,7 +5,7 @@ import { ExternalLink, Github } from "lucide-react";
 import { Link } from "react-router-dom";
 import pewterMain from "@/assets/pewter-main.png";
 import pewter1 from "@/assets/pewter-1.jpg";
-import pewterDiagram from "@/assets/pewter-diagram.png";
+import pewterAccuracy from "@/assets/pewter-accuracy.png";
 import wovenScreenshot from "@/assets/woven-screenshot.png";
 import wovenUi from "@/assets/woven-ui.png";
 
@@ -32,8 +32,8 @@ const projects = [{
       richText: true
     },
     {
-      image: pewterDiagram,
-      imageAlt: "Pewter system diagram",
+      image: pewterAccuracy,
+      imageAlt: "Pewter accuracy results",
       text: "result",
       richText: true
     }

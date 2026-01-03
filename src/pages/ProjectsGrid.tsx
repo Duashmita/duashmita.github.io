@@ -82,6 +82,7 @@ const projectsData: ProjectData[] = [
     contributors: ["Ashmita Dua"],
     date: "Mar 2025 - Present",
     images: [wovenPoster, wovenUi],
+    pdfUrl: "/Woven.pdf",
     link: "https://duashmita.github.io/woven/",
     github: "https://github.com/Duashmita/LLMStoryBuilderWoven"
   },

@@ -35,7 +35,7 @@ const Hero = () => {
       </div>
       
       {/* Dinosaur positioned at bottom-right */}
-      <div className="hidden md:block absolute bottom-0 right-8 lg:right-16">
+      <div className="hidden md:block absolute bottom-0 right-[10%] lg:right-[15%]">
         <img 
           src={dinosaurImg} 
           alt="Pixel dinosaur illustration" 

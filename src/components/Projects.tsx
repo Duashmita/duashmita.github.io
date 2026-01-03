@@ -3,6 +3,12 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
 import { Link } from "react-router-dom";
+import pewterMain from "@/assets/pewter-main.png";
+import pewter1 from "@/assets/pewter-1.jpg";
+import pewterDiagram from "@/assets/pewter-diagram.png";
+import wovenScreenshot from "@/assets/woven-screenshot.png";
+import wovenUi from "@/assets/woven-ui.png";
+
 const projects = [{
   title: "Pewter Platformer",
   slogan: "2D Platformer level generator using LLM",
@@ -14,20 +20,20 @@ const projects = [{
   githubUrl: "#",
   sections: [
     {
-      image: "https://images.unsplash.com/photo-1677442136019-21780ecad995",
-      imageAlt: "LLM debugging",
+      image: pewterMain,
+      imageAlt: "Pewter Platformer main interface",
       text: "problemStatement",
       richText: true
     },
     {
-      image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
-      imageAlt: "System optimization",
+      image: pewter1,
+      imageAlt: "Pewter Platformer gameplay",
       text: "solution",
       richText: true
     },
     {
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
-      imageAlt: "Benchmarking results",
+      image: pewterDiagram,
+      imageAlt: "Pewter system diagram",
       text: "result",
       richText: true
     }
@@ -43,13 +49,13 @@ const projects = [{
   githubUrl: "https://github.com/Duashmita/LLMStoryBuilderWoven",
   sections: [
     {
-      image: "https://images.unsplash.com/photo-1455849318743-b2233052fcff",
-      imageAlt: "Interactive storytelling",
+      image: wovenScreenshot,
+      imageAlt: "Woven app screenshot",
       text: "Built Woven, an interactive storytelling app using Streamlit and OpenAI's GPT-3.5."
     },
     {
-      image: "https://images.unsplash.com/photo-1516534775068-ba3e7458af70",
-      imageAlt: "Story mechanics",
+      image: wovenUi,
+      imageAlt: "Woven UI design",
       text: "Developed a turn-based story loop with mood-driven prompts and emotion-based story arcs."
     }
   ]

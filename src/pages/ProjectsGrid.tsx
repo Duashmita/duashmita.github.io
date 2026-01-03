@@ -84,7 +84,7 @@ const projectsData: ProjectData[] = [
     techStack: ["Python", "Streamlit", "OpenAI GPT-3.5", "Session State"],
     contributors: ["Ashmita Dua"],
     date: "Mar 2025 - Present",
-    images: [wovenScreenshot, wovenPoster, wovenUi],
+    images: [wovenScreenshot],
     pdfUrl: "/Woven.pdf",
     link: "https://duashmita.github.io/woven/",
     github: "https://github.com/Duashmita/LLMStoryBuilderWoven"

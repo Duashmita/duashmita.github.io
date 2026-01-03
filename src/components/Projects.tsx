@@ -51,11 +51,6 @@ const projects = [{
       image: "https://images.unsplash.com/photo-1516534775068-ba3e7458af70",
       imageAlt: "Story mechanics",
       text: "Developed a turn-based story loop with mood-driven prompts and emotion-based story arcs."
-    },
-    {
-      image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c",
-      imageAlt: "Session management",
-      text: "Handled GPT memory, rate limits, and user input with session state and custom summarization."
     }
   ]
 }];

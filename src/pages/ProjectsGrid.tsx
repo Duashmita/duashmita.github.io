@@ -5,14 +5,15 @@ import { Badge } from "@/components/ui/badge";
 import { useState, useEffect } from "react";
 import wovenPoster from "@/assets/woven-poster.png";
 import wovenUi from "@/assets/woven-ui.png";
-
+import pewter1 from "@/assets/pewter-1.jpg";
+import pewter2 from "@/assets/pewter-2.jpg";
 const projectsData = [
   {
     title: "Pewter Platformer",
     description: "Diagnosed and fixed LLM failure modes, reducing loop-rate from 78.7% to 46.3%",
     tags: ["Prompt Engineering", "LLMs", "Prompt Flow"],
     date: "Sep 2025 - Present",
-    images: ["https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop"],
+    images: [pewter1, pewter2],
     link: "https://pewterplatformer.wessel.xyz/",
     github: "#"
   },

@@ -36,7 +36,7 @@ const projects = [{
   title: "Woven - Interactive Story Builder",
   slogan: "Mood-driven interactive storytelling",
   skills: "LLMs + AI + Python",
-  date: "Mar 2025 - Present",
+  date: "Mar 2025 - Dec 2025",
   description: "Interactive storytelling app using GPT-3.5",
   tags: ["LLMs", "AI", "Machine Learning", "Python"],
   liveUrl: "https://duashmita.github.io/woven/",

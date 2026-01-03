@@ -5,7 +5,7 @@ import { ExternalLink, Github } from "lucide-react";
 import { Link } from "react-router-dom";
 const projects = [{
   title: "Pewter Platformer",
-  slogan: "Diagnosing and fixing LLM validation loop failure",
+  slogan: "2D Platformer level generator using LLM",
   skills: "Prompt Engineering + LLMs + Prompt Flow",
   date: "Sep 2025 - Present",
   description: "LLM agent validation and guardrail system",

@@ -11,6 +11,9 @@ import pewterMain from "@/assets/pewter-main.png";
 import pewterDiagram from "@/assets/pewter-diagram.png";
 import aslScreenshot from "@/assets/asl-screenshot.png";
 import pysignsScreenshot from "@/assets/pysigns-screenshot.png";
+import pysignsMethod from "@/assets/pysigns-method.png";
+import pysignsAccuracy from "@/assets/pysigns-accuracy.png";
+import pysignsIntro from "@/assets/pysigns-intro.png";
 
 interface ProjectData {
   title: string;
@@ -96,7 +99,7 @@ const projectsData: ProjectData[] = [
     techStack: ["Python", "PyTorch", "MediaPipe", "OpenCV", "CNN"],
     contributors: ["Ashmita Dua", "Nataniel Jayaseelan"],
     date: "Feb 2025 - Mar 2025",
-    images: [pysignsScreenshot],
+    images: [pysignsScreenshot, pysignsIntro, pysignsMethod, pysignsAccuracy],
     pdfUrl: "/PySigns.pdf",
     link: "https://duashmita.github.io/sign-language-vision/",
     github: "https://github.com/natanielj/ASLDecoder-ML"

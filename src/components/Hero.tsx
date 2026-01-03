@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section className="relative bg-primary overflow-hidden px-4">
       <div className="container mx-auto max-w-6xl px-0 py-20 md:py-24">
-        <div className="max-w-2xl pt-8 md:pt-12">
+        <div className="max-w-2xl pt-8 md:pt-12 pl-4 md:pl-8">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
             Hi! I am Ashmita Dua
           </h1>

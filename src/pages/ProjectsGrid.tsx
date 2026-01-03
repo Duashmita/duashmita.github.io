@@ -264,13 +264,16 @@ const ProjectModal = ({ project, onClose }: { project: ProjectData; onClose: () 
             {project.pdfUrl && (
               <div>
                 <h3 className="text-lg font-semibold text-foreground mb-3">Project Documentation</h3>
-                <div className="border border-border rounded-lg overflow-hidden h-96">
-                  <iframe
-                    src={project.pdfUrl}
-                    className="w-full h-full"
-                    title={`${project.title} PDF`}
-                  />
-                </div>
+                <a
+                  href={project.pdfUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground px-4 py-3 rounded-lg hover:bg-secondary/80 transition-colors"
+                >
+                  <FileText size={20} />
+                  <span>View PDF Documentation</span>
+                  <ExternalLink size={16} />
+                </a>
               </div>
             )}
 

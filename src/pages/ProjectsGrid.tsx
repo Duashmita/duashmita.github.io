@@ -10,7 +10,7 @@ const projectsData = [
     tags: ["Prompt Engineering", "LLMs", "Prompt Flow"],
     date: "Sep 2025 - Present",
     image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop",
-    link: "#",
+    link: "https://pewterplatformer.wessel.xyz/",
     github: "#"
   },
   {
@@ -28,7 +28,7 @@ const projectsData = [
     tags: ["LLMs", "AI", "Python"],
     date: "Mar 2025 - Present",
     image: "https://images.unsplash.com/photo-1455849318743-b2233052fcff?w=600&h=400&fit=crop",
-    link: "#",
+    link: "https://duashmita.github.io/woven/",
     github: "https://github.com/Duashmita/LLMStoryBuilderWoven"
   },
   {
@@ -37,7 +37,7 @@ const projectsData = [
     tags: ["AI", "Machine Learning", "Python"],
     date: "Feb 2025 - Mar 2025",
     image: "https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1?w=600&h=400&fit=crop",
-    link: "#",
+    link: "https://duashmita.github.io/sign-language-vision/",
     github: "https://github.com/natanielj/ASLDecoder-ML"
   },
   {
@@ -47,7 +47,7 @@ const projectsData = [
     date: "2024",
     image: "https://images.unsplash.com/photo-1579154204601-01588f351e67?w=600&h=400&fit=crop",
     link: "#",
-    github: "#"
+    github: "https://github.com/patilDevansh/BioInformatics.git"
   }
 ];
 

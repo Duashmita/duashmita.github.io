@@ -8,6 +8,7 @@ import wovenPoster from "@/assets/woven-poster.png";
 import wovenUi from "@/assets/woven-ui.png";
 import pewter1 from "@/assets/pewter-1.jpg";
 import pewter2 from "@/assets/pewter-2.jpg";
+import pewterMain from "@/assets/pewter-main.png";
 import aslScreenshot from "@/assets/asl-screenshot.png";
 import pysignsScreenshot from "@/assets/pysigns-screenshot.png";
 
@@ -42,7 +43,7 @@ const projectsData: ProjectData[] = [
     contributors: ["Ashmita Dua"],
     association: "Augmented Design Lab",
     date: "Sep 2025 - Present",
-    images: [pewter1, pewter2],
+    images: [pewterMain, pewter1, pewter2],
     link: "https://pewterplatformer.wessel.xyz/",
     github: "#"
   },

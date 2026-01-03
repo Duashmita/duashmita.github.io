@@ -16,7 +16,8 @@ const projects = [{
     {
       image: "https://images.unsplash.com/photo-1677442136019-21780ecad995",
       imageAlt: "LLM debugging",
-      text: "Diagnosed an LLM failure mode where the agent entered repetitive validation loops during level creation. Associated with Augmented Design Lab."
+      text: "problemStatement",
+      richText: true
     },
     {
       image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
@@ -111,7 +112,15 @@ const Projects = () => {
                         </div>
                         <div className={isEven ? "md:order-2" : "md:order-1"}>
                           <p className="text-muted-foreground leading-relaxed text-lg">
-                            {section.text}
+                            {section.richText && section.text === "problemStatement" ? (
+                              <>
+                                <span className="text-blue-500 font-bold">Problem Statement:</span>
+                                <br />
+                                The pewter platformer faced a validation loop, where it kept asking questions to validate its design without calling any tool, i.e. making any real changes
+                              </>
+                            ) : (
+                              section.text
+                            )}
                           </p>
                         </div>
                       </div>

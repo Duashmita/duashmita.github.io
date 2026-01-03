@@ -2,6 +2,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github } from "lucide-react";
+import { Link } from "react-router-dom";
 const projects = [{
   title: "Pewter Platformer",
   slogan: "Diagnosing and fixing LLM validation loop failure",
@@ -29,32 +30,6 @@ const projects = [{
     }
   ]
 }, {
-  title: "SlugQuest - Academic Advising LLM",
-  slogan: "Personalized course recommendations powered by AI",
-  skills: "LLMs + AI + Python",
-  date: "Apr 2025 - Present",
-  description: "Academic advisor chatbot for personalized guidance",
-  tags: ["LLMs", "AI", "Machine Learning", "Python"],
-  liveUrl: "#",
-  githubUrl: "https://github.com/Brightonca/SlugQuest",
-  sections: [
-    {
-      image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644",
-      imageAlt: "Academic advising chatbot",
-      text: "Developed academic advisor chatbot 'Samuel the Advisor' processing transcripts for personalized course recommendations."
-    },
-    {
-      image: "https://images.unsplash.com/photo-1434030216411-0b793f4b4173",
-      imageAlt: "Data integration",
-      text: "Integrated data from course catalogs and RMP ratings for prerequisite and scheduling analysis."
-    },
-    {
-      image: "https://images.unsplash.com/photo-1516321497487-e288fb19713f",
-      imageAlt: "Gemini API integration",
-      text: "Implemented Gemini API calls with large context handling to generate personalized academic guidance."
-    }
-  ]
-}, {
   title: "Woven - Interactive Story Builder",
   slogan: "Mood-driven interactive storytelling",
   skills: "LLMs + AI + Python",
@@ -78,48 +53,6 @@ const projects = [{
       image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c",
       imageAlt: "Session management",
       text: "Handled GPT memory, rate limits, and user input with session state and custom summarization."
-    }
-  ]
-}, {
-  title: "ASL Decoder CNN Model",
-  slogan: "Real-time American Sign Language recognition",
-  skills: "AI + Machine Learning + Python",
-  date: "Feb 2025 - Mar 2025",
-  description: "CNN-based system for ASL recognition",
-  tags: ["AI", "Machine Learning", "Python"],
-  liveUrl: "#",
-  githubUrl: "https://github.com/natanielj/ASLDecoder-ML",
-  sections: [
-    {
-      image: "https://images.unsplash.com/photo-1507146153580-69a1fe6d8aa1",
-      imageAlt: "ASL recognition",
-      text: "Designed a CNN-based system for real-time American Sign Language (ASL) recognition using live video inputs."
-    },
-    {
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b",
-      imageAlt: "Model optimization",
-      text: "Applied data augmentation and optimized CNN architecture to enhance accuracy."
-    }
-  ]
-}, {
-  title: "Influenza Mutation Prediction",
-  slogan: "Codon-based Graph Neural Networks for virus prediction",
-  skills: "GNNs + Bioinformatics + Python",
-  date: "2024",
-  description: "End-to-end pipeline for influenza mutation prediction",
-  tags: ["GNNs", "Bioinformatics", "Machine Learning"],
-  liveUrl: "#",
-  githubUrl: "#",
-  sections: [
-    {
-      image: "https://images.unsplash.com/photo-1579154204601-01588f351e67",
-      imageAlt: "Influenza research",
-      text: "Developed an end-to-end pipeline to predict influenza mutations with a codon-based Graph Neural Network."
-    },
-    {
-      image: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69",
-      imageAlt: "Data engineering",
-      text: "Engineered sequence alignment, metadata filtering, and codon graph conversion for virus data."
     }
   ]
 }];
@@ -193,6 +126,15 @@ const Projects = () => {
               )}
             </div>
           ))}
+        </div>
+        
+        {/* Check out more projects button */}
+        <div className="flex justify-center mt-16">
+          <Button variant="outline" size="lg" asChild className="hover-scale">
+            <Link to="/projects">
+              Check out more projects →
+            </Link>
+          </Button>
         </div>
       </div>
     </section>;

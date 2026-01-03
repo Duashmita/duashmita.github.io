@@ -1,44 +1,50 @@
-import { ArrowRight, Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroBg from "@/assets/hero-bg.jpg";
+import dinosaurImg from "@/assets/dinosaur.png";
+
 const Hero = () => {
-  return <section className="relative bg-primary overflow-hidden px-4">
-      <div className="container mx-auto max-w-6xl px-0 py-24 md:py-32">
-        <div className="max-w-4xl">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">Hi! I am Ashmita Dua</h1>
-          <p className="text-lg md:text-xl text-white/90 max-w-2xl font-mono mb-8">Computer Science student at UC Santa Cruz specializing in Game Design, AI/ML, and creative technology</p>
+  return (
+    <section className="relative bg-primary overflow-hidden px-4">
+      <div className="container mx-auto max-w-6xl px-0 py-32 md:py-40">
+        <div className="flex items-end justify-between">
+          <div className="max-w-2xl">
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
+              Hi! I am Ashmita Dua
+            </h1>
+            <p className="text-lg md:text-xl text-white/90 max-w-2xl font-mono mb-8">
+              Computer Science student at UC Santa Cruz specializing in Game Design, AI/ML, and creative technology
+            </p>
+            
+            <div className="flex gap-4">
+              <Button variant="outline" size="icon" className="bg-white/10 border-white/20 hover:bg-white/20 text-white h-12 w-12" asChild>
+                <a href="https://www.linkedin.com/in/duashmita/" target="_blank" rel="noopener noreferrer">
+                  <Linkedin className="h-6 w-6" />
+                </a>
+              </Button>
+              <Button variant="outline" size="icon" className="bg-white/10 border-white/20 hover:bg-white/20 text-white h-12 w-12" asChild>
+                <a href="mailto:duashmita@gmail.com">
+                  <Mail className="h-6 w-6" />
+                </a>
+              </Button>
+              <Button variant="outline" size="icon" className="bg-white/10 border-white/20 hover:bg-white/20 text-white h-12 w-12" asChild>
+                <a href="https://github.com/duashmita" target="_blank" rel="noopener noreferrer">
+                  <Github className="h-6 w-6" />
+                </a>
+              </Button>
+            </div>
+          </div>
           
-          <div className="flex gap-4">
-            <Button variant="outline" size="icon" className="bg-white/10 border-white/20 hover:bg-white/20 text-white h-12 w-12" asChild>
-              <a href="https://www.linkedin.com/in/duashmita/" target="_blank" rel="noopener noreferrer">
-                <Linkedin className="h-6 w-6" />
-              </a>
-            </Button>
-            <Button variant="outline" size="icon" className="bg-white/10 border-white/20 hover:bg-white/20 text-white h-12 w-12" asChild>
-              <a href="mailto:duashmita@gmail.com">
-                <Mail className="h-6 w-6" />
-              </a>
-            </Button>
-            <Button variant="outline" size="icon" className="bg-white/10 border-white/20 hover:bg-white/20 text-white h-12 w-12" asChild>
-              <a href="https://github.com/duashmita" target="_blank" rel="noopener noreferrer">
-                <Github className="h-6 w-6" />
-              </a>
-            </Button>
+          <div className="hidden md:block">
+            <img 
+              src={dinosaurImg} 
+              alt="Pixel dinosaur illustration" 
+              className="w-72 h-auto opacity-70"
+            />
           </div>
         </div>
-        
-        <div className="absolute bottom-0 right-0 w-64 md:w-96 opacity-10">
-          <svg viewBox="0 0 200 200" className="text-white">
-            <rect x="50" y="80" width="60" height="40" fill="currentColor" stroke="currentColor" strokeWidth="3" />
-            <rect x="90" y="50" width="40" height="30" fill="currentColor" stroke="currentColor" strokeWidth="3" />
-            <circle cx="70" cy="50" r="15" fill="currentColor" stroke="currentColor" strokeWidth="3" />
-            <rect x="60" y="130" width="15" height="40" fill="currentColor" stroke="currentColor" strokeWidth="3" />
-            <rect x="95" y="130" width="15" height="40" fill="currentColor" stroke="currentColor" strokeWidth="3" />
-            <line x1="70" y1="65" x2="70" y2="80" stroke="currentColor" strokeWidth="3" />
-            <line x1="100" y1="80" x2="110" y2="70" stroke="currentColor" strokeWidth="3" />
-          </svg>
-        </div>
       </div>
-    </section>;
+    </section>
+  );
 };
+
 export default Hero;

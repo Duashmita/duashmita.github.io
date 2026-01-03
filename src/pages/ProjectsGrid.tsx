@@ -9,6 +9,7 @@ import wovenUi from "@/assets/woven-ui.png";
 import pewter1 from "@/assets/pewter-1.jpg";
 import pewter2 from "@/assets/pewter-2.jpg";
 import aslScreenshot from "@/assets/asl-screenshot.png";
+import pysignsScreenshot from "@/assets/pysigns-screenshot.png";
 
 interface ProjectData {
   title: string;
@@ -94,7 +95,7 @@ const projectsData: ProjectData[] = [
     techStack: ["Python", "PyTorch", "MediaPipe", "OpenCV", "CNN"],
     contributors: ["Ashmita Dua", "Nataniel Jayaseelan"],
     date: "Feb 2025 - Mar 2025",
-    images: [aslScreenshot],
+    images: [pysignsScreenshot],
     pdfUrl: "/PySigns.pdf",
     link: "https://duashmita.github.io/sign-language-vision/",
     github: "https://github.com/natanielj/ASLDecoder-ML"

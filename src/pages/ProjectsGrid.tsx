@@ -14,6 +14,7 @@ import pysignsScreenshot from "@/assets/pysigns-screenshot.png";
 import pysignsMethod from "@/assets/pysigns-method.png";
 import pysignsAccuracy from "@/assets/pysigns-accuracy.png";
 import pysignsIntro from "@/assets/pysigns-intro.png";
+import slugquestThumbnail from "@/assets/slugquest-thumbnail.jpg";
 
 interface ProjectData {
   title: string;
@@ -64,7 +65,7 @@ const projectsData: ProjectData[] = [
     techStack: ["Python", "Gemini API", "Streamlit", "Pandas"],
     contributors: ["Ashmita Dua", "Brighton Ca"],
     date: "Apr 2025 - Present",
-    images: ["https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=600&h=400&fit=crop"],
+    images: [slugquestThumbnail],
     link: "#",
     github: "https://github.com/Brightonca/SlugQuest"
   },

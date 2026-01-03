@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { useState, useEffect } from "react";
 import wovenPoster from "@/assets/woven-poster.png";
 import wovenUi from "@/assets/woven-ui.png";
+import wovenScreenshot from "@/assets/woven-screenshot.png";
 import pewter1 from "@/assets/pewter-1.jpg";
 import pewterMain from "@/assets/pewter-main.png";
 import pewterDiagram from "@/assets/pewter-diagram.png";
@@ -83,7 +84,7 @@ const projectsData: ProjectData[] = [
     techStack: ["Python", "Streamlit", "OpenAI GPT-3.5", "Session State"],
     contributors: ["Ashmita Dua"],
     date: "Mar 2025 - Present",
-    images: [wovenPoster, wovenUi],
+    images: [wovenScreenshot, wovenPoster, wovenUi],
     pdfUrl: "/Woven.pdf",
     link: "https://duashmita.github.io/woven/",
     github: "https://github.com/Duashmita/LLMStoryBuilderWoven"

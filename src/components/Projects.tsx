@@ -7,7 +7,7 @@ import pewterMain from "@/assets/pewter-main.png";
 import pewterDiagram from "@/assets/pewter-diagram.png";
 import pewterAccuracy from "@/assets/pewter-accuracy.png";
 import wovenScreenshot from "@/assets/woven-screenshot.png";
-import wovenUi from "@/assets/woven-ui.png";
+import wovenGameplay from "@/assets/woven-gameplay.png";
 
 const projects = [{
   title: "Pewter Platformer",
@@ -54,8 +54,8 @@ const projects = [{
       text: "Built Woven, an interactive storytelling app using Streamlit and OpenAI's GPT-3.5."
     },
     {
-      image: wovenUi,
-      imageAlt: "Woven UI design",
+      image: wovenGameplay,
+      imageAlt: "Woven gameplay interface",
       text: "Developed a turn-based story loop with mood-driven prompts and emotion-based story arcs."
     }
   ]

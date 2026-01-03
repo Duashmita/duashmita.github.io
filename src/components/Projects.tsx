@@ -28,7 +28,8 @@ const projects = [{
     {
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
       imageAlt: "Benchmarking results",
-      text: "Benchmarked over 30 test prompts: loop-rate 78.7% → 46.3%, significantly improving the agent's reliability and user experience."
+      text: "result",
+      richText: true
     }
   ]
 }, {
@@ -126,6 +127,12 @@ const Projects = () => {
                                 1. Changed the system prompt to be 'action-first'
                                 <br />
                                 2. Implemented a lightweight conversation-state guardrail to limit repeated follow-up questions and reset on tool calls
+                              </>
+                            ) : section.richText && section.text === "result" ? (
+                              <>
+                                <span className="text-blue-500 font-bold">Result:</span>
+                                <br />
+                                Benchmarked over 30 test prompts: loop-rate <span className="text-blue-500 font-bold">78.7%</span> → <span className="text-blue-500 font-bold">46.3%</span>, significantly improving the agent's reliability and user experience.
                               </>
                             ) : (
                               section.text

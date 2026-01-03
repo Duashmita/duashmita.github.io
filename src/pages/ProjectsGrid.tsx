@@ -47,6 +47,7 @@ const projectsData: ProjectData[] = [
     association: "Augmented Design Lab",
     date: "Sep 2025 - Present",
     images: [pewterMain, pewter1, pewterDiagram],
+    pdfUrl: "/Pewter.pdf",
     link: "https://pewterplatformer.wessel.xyz/",
     github: "#"
   },

@@ -34,6 +34,44 @@ interface ProjectData {
 
 const projectsData: ProjectData[] = [
   {
+    title: "PySigns - ASL Decoder",
+    description: "CNN-based system for real-time American Sign Language recognition using live video",
+    bulletPoints: [
+      "Designed a CNN-based system for real-time American Sign Language (ASL) recognition using live video inputs",
+      "Applied data augmentation and optimized CNN architecture to enhance accuracy",
+      "Implemented MediaPipe hand tracking for real-time gesture detection",
+      "Built comparison system between real-time tracking and CNN model predictions",
+      "Achieved high confidence predictions with optimized model architecture"
+    ],
+    tags: ["AI", "Machine Learning", "Computer Vision"],
+    techStack: ["Python", "PyTorch", "MediaPipe", "OpenCV", "CNN"],
+    contributors: ["Ashmita Dua", "Nataniel Jayaseelan"],
+    date: "Feb 2025 - Mar 2025",
+    images: [pysignsScreenshot, pysignsIntro, pysignsMethod, pysignsAccuracy],
+    pdfUrl: "/PySigns.pdf",
+    link: "https://duashmita.github.io/sign-language-vision/",
+    github: "https://github.com/natanielj/ASLDecoder-ML"
+  },
+  {
+    title: "Woven - Interactive Story Builder",
+    description: "Interactive storytelling app using Streamlit and GPT-3.5 with mood-driven prompts",
+    bulletPoints: [
+      "Built Woven, an interactive storytelling app using Streamlit and OpenAI's GPT-3.5",
+      "Developed a turn-based story loop with mood-driven prompts and emotion-based story arcs",
+      "Handled GPT memory, rate limits, and user input with session state and custom summarization",
+      "Implemented emotional validation logic to ensure story coherence",
+      "Created personality-based story customization system"
+    ],
+    tags: ["LLMs", "AI", "Python"],
+    techStack: ["Python", "Streamlit", "OpenAI GPT-3.5", "Session State"],
+    contributors: ["Ashmita Dua"],
+    date: "Mar 2025 - Present",
+    images: [wovenScreenshot],
+    pdfUrl: "/Woven.pdf",
+    link: "https://duashmita.github.io/woven/",
+    github: "https://github.com/Duashmita/LLMStoryBuilderWoven"
+  },
+  {
     title: "Pewter Platformer",
     description: "Diagnosed and fixed LLM failure modes, reducing loop-rate from 78.7% to 46.3%",
     bulletPoints: [
@@ -69,44 +107,6 @@ const projectsData: ProjectData[] = [
     images: [slugquestThumbnail],
     link: "#",
     github: "https://github.com/Brightonca/SlugQuest"
-  },
-  {
-    title: "Woven - Interactive Story Builder",
-    description: "Interactive storytelling app using Streamlit and GPT-3.5 with mood-driven prompts",
-    bulletPoints: [
-      "Built Woven, an interactive storytelling app using Streamlit and OpenAI's GPT-3.5",
-      "Developed a turn-based story loop with mood-driven prompts and emotion-based story arcs",
-      "Handled GPT memory, rate limits, and user input with session state and custom summarization",
-      "Implemented emotional validation logic to ensure story coherence",
-      "Created personality-based story customization system"
-    ],
-    tags: ["LLMs", "AI", "Python"],
-    techStack: ["Python", "Streamlit", "OpenAI GPT-3.5", "Session State"],
-    contributors: ["Ashmita Dua"],
-    date: "Mar 2025 - Present",
-    images: [wovenScreenshot],
-    pdfUrl: "/Woven.pdf",
-    link: "https://duashmita.github.io/woven/",
-    github: "https://github.com/Duashmita/LLMStoryBuilderWoven"
-  },
-  {
-    title: "PySigns - ASL Decoder",
-    description: "CNN-based system for real-time American Sign Language recognition using live video",
-    bulletPoints: [
-      "Designed a CNN-based system for real-time American Sign Language (ASL) recognition using live video inputs",
-      "Applied data augmentation and optimized CNN architecture to enhance accuracy",
-      "Implemented MediaPipe hand tracking for real-time gesture detection",
-      "Built comparison system between real-time tracking and CNN model predictions",
-      "Achieved high confidence predictions with optimized model architecture"
-    ],
-    tags: ["AI", "Machine Learning", "Computer Vision"],
-    techStack: ["Python", "PyTorch", "MediaPipe", "OpenCV", "CNN"],
-    contributors: ["Ashmita Dua", "Nataniel Jayaseelan"],
-    date: "Feb 2025 - Mar 2025",
-    images: [pysignsScreenshot, pysignsIntro, pysignsMethod, pysignsAccuracy],
-    pdfUrl: "/PySigns.pdf",
-    link: "https://duashmita.github.io/sign-language-vision/",
-    github: "https://github.com/natanielj/ASLDecoder-ML"
   },
   {
     title: "Influenza Mutation Prediction",

@@ -106,7 +106,7 @@ const ProjectsGrid = () => {
                         href={project.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-primary transition-colors"
+                        className="flex items-center gap-1.5 text-sm font-medium bg-primary text-primary-foreground px-3 py-1.5 rounded-md hover:bg-primary/90 transition-colors"
                       >
                         <ExternalLink size={16} />
                         Live Demo

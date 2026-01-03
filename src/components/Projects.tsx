@@ -10,7 +10,7 @@ const projects = [{
   date: "Sep 2025 - Present",
   description: "LLM agent validation and guardrail system",
   tags: ["Prompt Engineering", "LLMs", "Prompt Flow"],
-  liveUrl: "#",
+  liveUrl: "https://pewterplatformer.wessel.xyz/",
   githubUrl: "#",
   sections: [
     {
@@ -36,7 +36,7 @@ const projects = [{
   date: "Mar 2025 - Present",
   description: "Interactive storytelling app using GPT-3.5",
   tags: ["LLMs", "AI", "Machine Learning", "Python"],
-  liveUrl: "#",
+  liveUrl: "https://duashmita.github.io/woven/",
   githubUrl: "https://github.com/Duashmita/LLMStoryBuilderWoven",
   sections: [
     {

@@ -22,7 +22,8 @@ const projects = [{
     {
       image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3",
       imageAlt: "System optimization",
-      text: "Iterated the system prompt + interaction flow to enforce 'action-first' behavior and structured tool use. Implemented a lightweight conversation-state guardrail to limit repeated follow-up questions and reset on tool calls."
+      text: "solution",
+      richText: true
     },
     {
       image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
@@ -117,6 +118,14 @@ const Projects = () => {
                                 <span className="text-blue-500 font-bold">Problem Statement:</span>
                                 <br />
                                 The pewter platformer faced a validation loop, where it kept asking questions to validate its design without calling any tool, i.e. making any real changes
+                              </>
+                            ) : section.richText && section.text === "solution" ? (
+                              <>
+                                <span className="text-blue-500 font-bold">Solution:</span>
+                                <br />
+                                1. Changed the system prompt to be 'action-first'
+                                <br />
+                                2. Implemented a lightweight conversation-state guardrail to limit repeated follow-up questions and reset on tool calls
                               </>
                             ) : (
                               section.text

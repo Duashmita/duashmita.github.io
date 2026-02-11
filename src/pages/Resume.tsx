@@ -112,8 +112,8 @@ const Resume = () => {
                 <div>
                   <h3 className="text-xl font-semibold text-foreground mb-2">Pewter Platformer</h3>
                   <p className="text-sm text-primary mb-2">
-                    <a href="https://pewterplatformer.wessel.xyz/" target="_blank" rel="noopener noreferrer" className="hover:underline">
-                      Demo: pewterplatformer.wessel.xyz
+                    <a href="https://pewter-classic-aaaaaaaaaaaaaaaaaa.vercel.app/?_vercel_share=Uq4de7RWU1nKA9oXpKS4JsaQC53AASZj" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                      Demo: pewter-classic.vercel.app
                     </a>
                   </p>
                   <ul className="text-muted-foreground leading-relaxed list-disc list-inside space-y-1">

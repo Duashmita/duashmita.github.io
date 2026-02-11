@@ -88,7 +88,7 @@ const projectsData: ProjectData[] = [
     date: "Sep 2025 - Present",
     images: [pewterMain, pewter1, pewterDiagram],
     pdfUrl: "/Pewter.pdf",
-    link: "https://pewterplatformer.wessel.xyz/",
+    link: "https://pewter-classic-aaaaaaaaaaaaaaaaaa.vercel.app/?_vercel_share=Uq4de7RWU1nKA9oXpKS4JsaQC53AASZj",
     github: "#"
   },
   {

@@ -16,7 +16,7 @@ const projects = [{
   date: "Sep 2025 - Present",
   description: "LLM agent validation and guardrail system",
   tags: ["Prompt Engineering", "LLMs", "Prompt Flow"],
-  liveUrl: "https://pewterplatformer.wessel.xyz/",
+  liveUrl: "https://pewter-classic-aaaaaaaaaaaaaaaaaa.vercel.app/?_vercel_share=Uq4de7RWU1nKA9oXpKS4JsaQC53AASZj",
   githubUrl: "#",
   sections: [
     {

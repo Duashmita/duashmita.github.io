@@ -215,7 +215,7 @@ const ProjectModal = ({ project, onClose }: { project: ProjectData; onClose: () 
             {project.association && (
               <div className="flex items-center gap-2 text-sm">
                 <Building size={16} className="text-primary" />
-                <span className="text-muted-foreground">Associated with:</span>
+                <span className="text-muted-foreground">associated with:</span>
                 <span className="font-medium text-foreground">{project.association}</span>
               </div>
             )}
@@ -224,7 +224,7 @@ const ProjectModal = ({ project, onClose }: { project: ProjectData; onClose: () 
             <div className="flex items-start gap-2">
               <Users size={16} className="text-primary mt-0.5" />
               <div>
-                <span className="text-sm text-muted-foreground">Contributors:</span>
+                <span className="text-sm text-muted-foreground">contributors:</span>
                 <div className="flex flex-wrap gap-2 mt-1">
                   {project.contributors.map((contributor, index) => (
                     <span key={index} className="text-sm bg-secondary text-secondary-foreground px-2 py-1 rounded">
@@ -237,7 +237,7 @@ const ProjectModal = ({ project, onClose }: { project: ProjectData; onClose: () 
 
             {/* Bullet Points */}
             <div>
-              <h3 className="text-lg font-semibold text-foreground mb-3">Key Highlights</h3>
+              <h3 className="text-lg font-semibold text-foreground mb-3">key highlights</h3>
               <ul className="space-y-2">
                 {project.bulletPoints.map((point, index) => (
                   <li key={index} className="flex items-start gap-2 text-sm text-muted-foreground">
@@ -250,7 +250,7 @@ const ProjectModal = ({ project, onClose }: { project: ProjectData; onClose: () 
 
             {/* Tech Stack */}
             <div>
-              <h3 className="text-lg font-semibold text-foreground mb-3">Tech Stack</h3>
+              <h3 className="text-lg font-semibold text-foreground mb-3">tech stack</h3>
               <div className="flex flex-wrap gap-2">
                 {project.techStack.map((tech, index) => (
                   <span key={index} className="text-sm bg-primary/10 text-primary px-3 py-1.5 rounded-md">
@@ -263,7 +263,7 @@ const ProjectModal = ({ project, onClose }: { project: ProjectData; onClose: () 
             {/* PDF Display */}
             {project.pdfUrl && (
               <div>
-                <h3 className="text-lg font-semibold text-foreground mb-3">Project Documentation</h3>
+                <h3 className="text-lg font-semibold text-foreground mb-3">project documentation</h3>
                 <a
                   href={project.pdfUrl}
                   target="_blank"
@@ -271,7 +271,7 @@ const ProjectModal = ({ project, onClose }: { project: ProjectData; onClose: () 
                   className="inline-flex items-center gap-2 bg-secondary text-secondary-foreground px-4 py-3 rounded-lg hover:bg-secondary/80 transition-colors"
                 >
                   <FileText size={20} />
-                  <span>View PDF Documentation</span>
+                  <span>view pdf documentation</span>
                   <ExternalLink size={16} />
                 </a>
               </div>
@@ -287,7 +287,7 @@ const ProjectModal = ({ project, onClose }: { project: ProjectData; onClose: () 
                   className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors"
                 >
                   <Github size={20} />
-                  <span>View on GitHub</span>
+                  <span>view on github</span>
                 </a>
               )}
               {project.link && project.link !== "#" && (
@@ -298,7 +298,7 @@ const ProjectModal = ({ project, onClose }: { project: ProjectData; onClose: () 
                   className="flex items-center gap-2 font-medium bg-primary text-primary-foreground px-4 py-2 rounded-md hover:bg-primary/90 transition-colors"
                 >
                   <ExternalLink size={18} />
-                  <span>Live Demo</span>
+                  <span>live demo</span>
                 </a>
               )}
             </div>
@@ -346,7 +346,7 @@ const ProjectsGrid = () => {
                     ))}
                   </div>
                   <div className="pt-2 border-t border-border">
-                    <p className="text-xs text-muted-foreground mb-1.5 font-medium">Tech Stack</p>
+                    <p className="text-xs text-muted-foreground mb-1.5 font-medium">tech stack</p>
                     <div className="flex flex-wrap gap-1">
                       {project.techStack.slice(0, 4).map((tech, techIndex) => (
                         <span key={techIndex} className="text-xs bg-primary/10 text-primary px-2 py-0.5 rounded">
@@ -363,19 +363,19 @@ const ProjectsGrid = () => {
                     {project.github && project.github !== "#" && (
                       <span className="flex items-center gap-1.5 text-sm text-muted-foreground">
                         <Github size={16} />
-                        GitHub
+                        github
                       </span>
                     )}
                     {project.link && project.link !== "#" && (
                       <span className="flex items-center gap-1.5 text-sm font-medium bg-primary text-primary-foreground px-3 py-1.5 rounded-md">
                         <ExternalLink size={16} />
-                        Live Demo
+                        live demo
                       </span>
                     )}
                     {project.pdfUrl && (
                       <span className="flex items-center gap-1.5 text-sm text-muted-foreground">
                         <FileText size={16} />
-                        PDF
+                        pdf
                       </span>
                     )}
                   </div>

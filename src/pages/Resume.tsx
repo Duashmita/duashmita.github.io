@@ -64,19 +64,6 @@ const Resume = () => {
               <div className="space-y-8">
                 <div>
                   <div className="flex flex-col sm:flex-row justify-between items-start mb-2 gap-1">
-                    <h3 className="text-xl font-semibold text-foreground">LLM Integration Specialist / Trainer</h3>
-                    <span className="text-muted-foreground font-mono text-sm">April 2026 - Present</span>
-                  </div>
-                  <p className="text-primary mb-2">Kaido</p>
-                  <ul className="text-muted-foreground leading-relaxed list-disc list-inside space-y-1">
-                    <li>Designing LLM-powered companion AI for an educational electronics RPG on a portable handheld device</li>
-                    <li>Architecting conversational interface integrating LLM dialogue generation with circuit-building gameplay progression</li>
-                    <li>Leading AI/game integration as sole LLM specialist on a 3-person pre-launch startup team</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <div className="flex flex-col sm:flex-row justify-between items-start mb-2 gap-1">
                     <h3 className="text-xl font-semibold text-foreground">Open-Source Contributor</h3>
                     <span className="text-muted-foreground font-mono text-sm">March 2026 - Present</span>
                   </div>

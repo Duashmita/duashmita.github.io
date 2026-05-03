@@ -201,8 +201,8 @@ const Resume = () => {
                     </a>
                   </p>
                   <ul className="text-muted-foreground leading-relaxed list-disc list-inside space-y-1">
-                    <li>Built an IoT habit tracker combining Arduino hardware with a web app featuring AI-powered habit detection via OpenCV and progressive milestone rewards</li>
-                    <li>Engineered Node.js bridge for real-time Arduino-web communication using sensors and actuators (servos, LEDs, buzzers)</li>
+                    <li>Built an IoT habit tracker combining ESP32 hardware with a web app featuring AI-powered habit detection via OpenCV and progressive milestone rewards</li>
+                    <li>Engineered Node.js bridge for real-time ESP32-web communication using sensors and actuators (servos, LEDs, buzzers)</li>
                     <li>Deployed full-stack application using React/Vite/Zustand on the Vercel platform</li>
                   </ul>
                 </div>

@@ -93,7 +93,7 @@ const Projects = () => {
                     </div>
                     <Button variant="default" size="lg" asChild className="shrink-0 hover-scale">
                       <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="gap-2">
-                        Check it out →
+                        check it out →
                       </a>
                     </Button>
                   </div>
@@ -117,23 +117,23 @@ const Projects = () => {
                           <p className="text-muted-foreground leading-relaxed text-lg">
                             {section.richText && section.text === "problemStatement" ? (
                               <>
-                                <span className="text-blue-500 font-bold">Problem Statement:</span>
+                                <span className="text-blue-500 font-bold">problem statement:</span>
                                 <br />
-                                The pewter platformer faced a validation loop, where it kept asking questions to validate its design without calling any tool, i.e. making any real changes
+                                the pewter platformer faced a validation loop, where it kept asking questions to validate its design without calling any tool, i.e. making any real changes
                               </>
                             ) : section.richText && section.text === "solution" ? (
                               <>
-                                <span className="text-blue-500 font-bold">Solution:</span>
+                                <span className="text-blue-500 font-bold">solution:</span>
                                 <br />
-                                1. Changed the system prompt to be 'action-first'
+                                1. changed the system prompt to be 'action-first'
                                 <br />
-                                2. Implemented a lightweight conversation-state guardrail to limit repeated follow-up questions and reset on tool calls
+                                2. implemented a lightweight conversation-state guardrail to limit repeated follow-up questions and reset on tool calls
                               </>
                             ) : section.richText && section.text === "result" ? (
                               <>
-                                <span className="text-blue-500 font-bold">Result:</span>
+                                <span className="text-blue-500 font-bold">result:</span>
                                 <br />
-                                Benchmarked over 30 test prompts: loop-rate <span className="text-blue-500 font-bold">78.7%</span> → <span className="text-blue-500 font-bold">46.3%</span>, significantly improving the agent's reliability and user experience.
+                                benchmarked over 30 test prompts: loop-rate <span className="text-blue-500 font-bold">78.7%</span> → <span className="text-blue-500 font-bold">46.3%</span>, significantly improving the agent's reliability and user experience.
                               </>
                             ) : (
                               section.text
@@ -158,7 +158,7 @@ const Projects = () => {
         <div className="flex justify-center mt-16">
           <Button variant="outline" size="lg" asChild className="hover-scale">
             <Link to="/projects">
-              Check out more projects →
+              check out more projects →
             </Link>
           </Button>
         </div>

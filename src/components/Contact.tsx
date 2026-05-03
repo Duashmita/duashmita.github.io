@@ -27,8 +27,8 @@ const Contact = () => {
       }
 
       toast({
-        title: "Message sent!",
-        description: "Thank you for reaching out. I'll get back to you soon.",
+        title: "message sent!",
+        description: "thank you for reaching out. i'll get back to you soon.",
       });
 
       // Clear form
@@ -38,8 +38,8 @@ const Contact = () => {
     } catch (error: any) {
       console.error("Error sending message:", error);
       toast({
-        title: "Error",
-        description: "Failed to send message. Please try again.",
+        title: "error",
+        description: "failed to send message. please try again.",
         variant: "destructive",
       });
     } finally {
@@ -51,29 +51,29 @@ const Contact = () => {
     <section id="contact" className="py-24 px-4">
       <div className="container mx-auto max-w-2xl">
         <div className="text-center mb-12">
-          <h2 className="mb-4">Get In Touch</h2>
+          <h2 className="mb-4">get in touch</h2>
           <p className="text-muted-foreground text-lg">
-            Have a project in mind? Let's work together!
+            have a project in mind? let's work together!
           </p>
         </div>
         
         <Card>
           <CardHeader>
-            <CardTitle>Send me a message</CardTitle>
+            <CardTitle>send me a message</CardTitle>
             <CardDescription>
               <div className="space-y-4 mt-4">
                 <div className="flex items-center gap-3">
-                  <span className="text-sm text-muted-foreground">Email:</span>
+                  <span className="text-sm text-muted-foreground">email:</span>
                   <a href="mailto:duashmita@gmail.com" className="text-foreground hover:text-primary transition-colors">
                     duashmita@gmail.com
                   </a>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-sm text-muted-foreground">Location:</span>
-                  <span className="text-foreground">Santa Cruz, California</span>
+                  <span className="text-sm text-muted-foreground">location:</span>
+                  <span className="text-foreground">santa cruz, california</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-sm text-muted-foreground">Phone:</span>
+                  <span className="text-sm text-muted-foreground">phone:</span>
                   <a href="tel:+14085987970" className="text-foreground hover:text-primary transition-colors">
                     +1 (408) 598-7970
                   </a>
@@ -85,7 +85,7 @@ const Contact = () => {
             <form onSubmit={handleSubmit} className="space-y-4">
               <div className="space-y-2">
                 <Input 
-                  placeholder="Your Name" 
+                  placeholder="your name" 
                   required 
                   value={name}
                   onChange={(e) => setName(e.target.value)}
@@ -104,7 +104,7 @@ const Contact = () => {
               </div>
               <div className="space-y-2">
                 <Textarea 
-                  placeholder="Your message..." 
+                  placeholder="your message..." 
                   className="min-h-[150px]" 
                   required 
                   value={message}
@@ -113,7 +113,7 @@ const Contact = () => {
                 />
               </div>
               <Button type="submit" className="w-full" disabled={isSubmitting}>
-                {isSubmitting ? "Sending..." : "Send Message"}
+                {isSubmitting ? "sending..." : "send message"}
               </Button>
             </form>
           </CardContent>

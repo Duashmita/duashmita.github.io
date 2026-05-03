@@ -2,16 +2,16 @@ import { Badge } from "@/components/ui/badge";
 
 const skillCategories = [
   {
-    category: "Programming",
-    skills: ["Python", "SQL", "HTML/CSS", "JavaScript", "React"],
+    category: "programming",
+    skills: ["python", "sql", "html/css", "javascript", "react"],
   },
   {
-    category: "AI/ML & Tools",
-    skills: ["PyTorch", "Keras", "Neural Networks", "CNNs", "NLP", "RAG", "Langchain", "Finetuning"],
+    category: "ai/ml & tools",
+    skills: ["pytorch", "keras", "neural networks", "cnns", "nlp", "rag", "langchain", "finetuning"],
   },
   {
-    category: "Design & Languages",
-    skills: ["Graphic Design", "English", "Hindi", "German"],
+    category: "design & languages",
+    skills: ["graphic design", "english", "hindi", "german"],
   },
 ];
 
@@ -20,9 +20,9 @@ const Skills = () => {
     <section className="py-24 px-4 bg-card/50">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="mb-4">Skills & Technologies</h2>
+          <h2 className="mb-4">skills & technologies</h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            Technologies and tools I work with
+            technologies and tools i work with
           </p>
         </div>
         

@@ -57,33 +57,33 @@ All colors MUST be HSL.
     --popover: 220 40% 14%;
     --popover-foreground: 50 90% 92%;
 
-    --primary: 42 85% 62%;
-    --primary-foreground: 220 60% 10%;
+    --primary: 220 90% 60%;
+    --primary-foreground: 50 100% 97%;
 
-    --secondary: 220 90% 60%;
-    --secondary-foreground: 50 100% 97%;
+    --secondary: 42 85% 62%;
+    --secondary-foreground: 220 60% 10%;
 
     --muted: 220 30% 20%;
     --muted-foreground: 48 30% 75%;
 
-    --accent: 220 90% 60%;
-    --accent-foreground: 50 100% 97%;
+    --accent: 42 85% 62%;
+    --accent-foreground: 220 60% 10%;
 
     --destructive: 0 62.8% 50.6%;
     --destructive-foreground: 0 0% 98%;
 
     --border: 220 30% 25%;
     --input: 220 30% 25%;
-    --ring: 42 85% 62%;
+    --ring: 220 90% 60%;
 
     --sidebar-background: 220 40% 14%;
     --sidebar-foreground: 50 90% 90%;
-    --sidebar-primary: 42 85% 62%;
+    --sidebar-primary: 220 90% 60%;
     --sidebar-primary-foreground: 50 100% 97%;
     --sidebar-accent: 220 30% 20%;
     --sidebar-accent-foreground: 42 85% 70%;
     --sidebar-border: 220 30% 25%;
-    --sidebar-ring: 42 85% 62%;
+    --sidebar-ring: 220 90% 60%;
   }
 }
 

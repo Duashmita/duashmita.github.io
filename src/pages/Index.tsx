@@ -10,7 +10,7 @@ const Index = () => {
       <Navbar />
       <Hero />
       <Projects />
-      
+      <Publications />
       <Skills />
       <Contact />
       <Footer />

@@ -51,7 +51,7 @@ const Navbar = () => {
               className="text-foreground hover:text-primary transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Projects
+              projects
             </Link>
             <Link 
               to="/blog" 

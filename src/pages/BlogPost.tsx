@@ -26,12 +26,12 @@ const BlogPostPage = () => {
           <section className="container mx-auto max-w-3xl px-4">
             <Card className="glass">
               <CardHeader>
-                <CardTitle>Post not found</CardTitle>
+                <CardTitle>post not found</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <p className="text-muted-foreground">That blog post doesn’t exist (or was removed).</p>
+                <p className="text-muted-foreground">that blog post doesn’t exist (or was removed).</p>
                 <Button asChild>
-                  <Link to="/blog">Back to Blog</Link>
+                  <Link to="/blog">back to blog</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -66,7 +66,7 @@ const BlogPostPage = () => {
             <Button asChild variant="ghost" className="hover-scale">
               <Link to="/blog" className="inline-flex items-center gap-2" aria-label="Back to Blog">
                 <ArrowLeft className="h-4 w-4" />
-                Back
+                back
               </Link>
             </Button>
           </div>

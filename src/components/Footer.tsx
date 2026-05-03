@@ -5,10 +5,10 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
             <Code2 className="h-5 w-5 text-primary" />
-            <span className="font-mono text-sm text-muted-foreground">© 2024 Portfolio</span>
+            <span className="font-mono text-sm text-muted-foreground">© 2024 portfolio</span>
           </div>
           <div className="text-sm text-muted-foreground">
-            Designed & Developed with ❤️
+            designed & developed with ❤️
           </div>
         </div>
       </div>

@@ -29,7 +29,8 @@ const Resume = () => {
                     <h3 className="text-xl font-semibold text-foreground">B.Sc. Computer Science</h3>
                     <span className="text-muted-foreground font-mono text-sm">Sept 2024 - June 2028</span>
                   </div>
-                  <p className="text-primary mb-2">University of California, Santa Cruz | GPA 3.66/4.0 (Dean's Honor List Winter 2025)</p>
+                  <p className="text-primary mb-2">University of California, Santa Cruz | GPA 3.71/4.0 (Dean's Honor List)</p>
+                  <p className="text-muted-foreground text-sm">Relevant Coursework: CSE101 (Data Structures/Algorithms), CMPM80K (Game Engines), CSE40 (AI/ML)</p>
                 </div>
               </div>
             </section>
@@ -40,19 +41,19 @@ const Resume = () => {
               <div className="space-y-3">
                 <div>
                   <span className="text-foreground font-semibold">Game Development:</span>{" "}
-                  <span className="text-muted-foreground">Unity/C#, Procedural Content Generation (Wave Function Collapse), Level Design</span>
-                </div>
-                <div>
-                  <span className="text-foreground font-semibold">AI/ML:</span>{" "}
-                  <span className="text-muted-foreground">LLMs (GPT-4, Gemini, Claude), Prompt Engineering, RAG Systems, PyTorch, CNNs, NLP</span>
+                  <span className="text-muted-foreground">Unity/C#, Procedural Content Generation (WFC), Level Design, Godot</span>
                 </div>
                 <div>
                   <span className="text-foreground font-semibold">Programming Languages:</span>{" "}
-                  <span className="text-muted-foreground">Python, C/C++, JavaScript, HTML/CSS</span>
+                  <span className="text-muted-foreground">Python, C/C++, JavaScript/TypeScript, HTML/CSS</span>
                 </div>
                 <div>
                   <span className="text-foreground font-semibold">Tools & Frameworks:</span>{" "}
-                  <span className="text-muted-foreground">Git, LangChain, OpenCV, APIs, Streamlit</span>
+                  <span className="text-muted-foreground">Git, LangChain/LangGraph, OpenCV, APIs, Cursor, Kubernetes, Claude Code, Multi-Agent Envs</span>
+                </div>
+                <div>
+                  <span className="text-foreground font-semibold">AI/ML:</span>{" "}
+                  <span className="text-muted-foreground">LLMs (Gemini, Claude), RAG, PyTorch, CNNs, Reinforcement Learning, Fine-tuning, NeuroSymbolic AI</span>
                 </div>
               </div>
             </section>
@@ -63,6 +64,33 @@ const Resume = () => {
               <div className="space-y-8">
                 <div>
                   <div className="flex flex-col sm:flex-row justify-between items-start mb-2 gap-1">
+                    <h3 className="text-xl font-semibold text-foreground">LLM Integration Specialist / Trainer</h3>
+                    <span className="text-muted-foreground font-mono text-sm">April 2026 - Present</span>
+                  </div>
+                  <p className="text-primary mb-2">Kaido</p>
+                  <ul className="text-muted-foreground leading-relaxed list-disc list-inside space-y-1">
+                    <li>Designing LLM-powered companion AI for an educational electronics RPG on a portable handheld device</li>
+                    <li>Architecting conversational interface integrating LLM dialogue generation with circuit-building gameplay progression</li>
+                    <li>Leading AI/game integration as sole LLM specialist on a 3-person pre-launch startup team</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <div className="flex flex-col sm:flex-row justify-between items-start mb-2 gap-1">
+                    <h3 className="text-xl font-semibold text-foreground">Open-Source Contributor</h3>
+                    <span className="text-muted-foreground font-mono text-sm">March 2026 - Present</span>
+                  </div>
+                  <p className="text-primary mb-2">Terraforma by Overture</p>
+                  <ul className="text-muted-foreground leading-relaxed list-disc list-inside space-y-1">
+                    <li>Building an agentic AI pipeline that corrects stale location data in the Overture Maps Foundation Places dataset using LLM-powered web cross-referencing</li>
+                    <li>Developing confidence scoring system to flag closures, moved businesses, and outdated entries across geographic regions</li>
+                    <li>Engineering full-stack review dashboard (React + FastAPI + PostgreSQL) with interactive map view for human-in-the-loop correction approval</li>
+                    <li>Designing neurosymbolic layer to complement LLM agent reasoning with structured logical rules for data quality verification</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <div className="flex flex-col sm:flex-row justify-between items-start mb-2 gap-1">
                     <h3 className="text-xl font-semibold text-foreground">Undergraduate Researcher</h3>
                     <span className="text-muted-foreground font-mono text-sm">Sept 2025 - Present</span>
                   </div>
@@ -71,6 +99,31 @@ const Resume = () => {
                     <li>Reduced LLM validation loop errors by 42% (78.7% → 46.3%) in the level generation system by redesigning system prompts to enforce action-first behavior and structured tool use, in Pewter Platformer</li>
                     <li>Led a study focused on generating game levels through LLMs/PCG and hierarchical wave function collapse</li>
                     <li>Implemented action-first behavioral constraints, reducing repetitive agent loops across 30+ test scenarios</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <div className="flex flex-col sm:flex-row justify-between items-start mb-2 gap-1">
+                    <h3 className="text-xl font-semibold text-foreground">Undergraduate Researcher</h3>
+                    <span className="text-muted-foreground font-mono text-sm">April 2025 - Present</span>
+                  </div>
+                  <p className="text-primary mb-2">Artificial Intelligence Explainability Accountability Lab</p>
+                  <ul className="text-muted-foreground leading-relaxed list-disc list-inside space-y-1">
+                    <li>Leading a study focused on Episodic Memory using Neuro Symbolic layers, and query agnostic KV</li>
+                    <li>Configured local LLM API Memory Management and retrieval models and integrated SWI-Prolog for logical reasoning verification</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <div className="flex flex-col sm:flex-row justify-between items-start mb-2 gap-1">
+                    <h3 className="text-xl font-semibold text-foreground">Website Designer</h3>
+                    <span className="text-muted-foreground font-mono text-sm">Dec 2024 - Present</span>
+                  </div>
+                  <p className="text-primary mb-2">Undergraduate Admissions Office, UCSC</p>
+                  <ul className="text-muted-foreground leading-relaxed list-disc list-inside space-y-1">
+                    <li>Maintain university admissions website serving 50,000+ prospective students annually</li>
+                    <li>Redesigned 15+ web pages improving mobile responsiveness and navigation</li>
+                    <li>Managed structured data systems supporting admissions cycle workflows</li>
                   </ul>
                 </div>
 
@@ -87,18 +140,25 @@ const Resume = () => {
                     <li>Improved dealer conversion rates by providing comprehensive, accessible resources through an automated workflow system</li>
                   </ul>
                 </div>
+              </div>
+            </section>
 
+            {/* Publications Section */}
+            <section>
+              <h2 className="text-2xl font-bold text-primary mb-6">Publications</h2>
+              <div className="space-y-8">
                 <div>
-                  <div className="flex flex-col sm:flex-row justify-between items-start mb-2 gap-1">
-                    <h3 className="text-xl font-semibold text-foreground">Undergraduate Researcher</h3>
-                    <span className="text-muted-foreground font-mono text-sm">April 2025 - June 2025</span>
-                  </div>
-                  <p className="text-primary mb-2">Artificial Intelligence Explainability Accountability Lab</p>
-                  <ul className="text-muted-foreground leading-relaxed list-disc list-inside space-y-1">
-                    <li>Led a study focused on LLM safety, logic translation, and inconsistency detection</li>
-                    <li>Configured local LLM API environments and integrated SWI-Prolog for logical reasoning verification</li>
-                    <li>Built a knowledge base and curated UCSC-specific questions</li>
-                  </ul>
+                  <h3 className="text-xl font-semibold text-foreground mb-2">Pewter: A Mixed-Initiative System for Natural Language Tilemap Design</h3>
+                  <p className="text-sm text-primary mb-2">Under review at UIST '26 Conference | Augmented Design Lab (w. Prof. Jim Whitehead)</p>
+                  <p className="text-muted-foreground leading-relaxed">A mixed-initiative system enabling natural language-driven tilemap level design, combining LLM agents with hierarchical wave function collapse to reduce validation loop errors by 42% across 30+ test scenarios.</p>
+                </div>
+                <div>
+                  <h3 className="text-xl font-semibold text-foreground mb-2">Engram: Personality-Parameterized Schema Memory for NPC Cognitive Diversity</h3>
+                  <p className="text-sm text-primary mb-2">
+                    Under review at FDG '26 | Co-authored w. Devesh Kriplani |{" "}
+                    <a href="https://bit.ly/engramPersonalityNPC" target="_blank" rel="noopener noreferrer" className="hover:underline">Demo</a>
+                  </p>
+                  <p className="text-muted-foreground leading-relaxed">Parameterizes OCEAN (Big Five) personality traits with Prolog-based memory encoding rules, enabling NPCs to form structurally different memories from identical experiences and producing trait-consistent cognitive diversity without scripting.</p>
                 </div>
               </div>
             </section>
@@ -141,8 +201,8 @@ const Resume = () => {
                     </a>
                   </p>
                   <ul className="text-muted-foreground leading-relaxed list-disc list-inside space-y-1">
-                    <li>Built an IoT habit tracker combining Arduino hardware with a web app featuring AI-powered habit detection via OpenCV and progressive milestone rewards</li>
-                    <li>Engineered Node.js bridge for real-time Arduino-web communication using sensors and actuators (servos, LEDs, buzzers)</li>
+                    <li>Built an IoT habit tracker combining ESP32 hardware with a web app featuring AI-powered habit detection via OpenCV and progressive milestone rewards</li>
+                    <li>Engineered Node.js bridge for real-time ESP32-web communication using sensors and actuators (servos, LEDs, buzzers)</li>
                     <li>Deployed full-stack application using React/Vite/Zustand on the Vercel platform</li>
                   </ul>
                 </div>

@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import dinosaurImg from "@/assets/dinosaur.png";
 
@@ -28,6 +28,11 @@ const Hero = () => {
             <Button variant="outline" size="icon" className="bg-primary-foreground/10 border-primary-foreground/30 hover:bg-primary-foreground/20 text-primary-foreground h-12 w-12" asChild>
               <a href="https://github.com/duashmita" target="_blank" rel="noopener noreferrer">
                 <Github className="h-6 w-6" />
+              </a>
+            </Button>
+            <Button variant="outline" size="icon" className="bg-primary-foreground/10 border-primary-foreground/30 hover:bg-primary-foreground/20 text-primary-foreground h-12 w-12" asChild>
+              <a href="https://x.com/duashmita" target="_blank" rel="noopener noreferrer">
+                <Twitter className="h-6 w-6" />
               </a>
             </Button>
           </div>

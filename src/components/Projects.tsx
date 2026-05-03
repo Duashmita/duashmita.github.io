@@ -113,13 +113,13 @@ const Projects = () => {
                           <p className="text-muted-foreground leading-relaxed text-lg">
                             {section.richText && section.text === "problemStatement" ? (
                               <>
-                                <span className="text-blue-500 font-bold">problem statement:</span>
+                                <span className="text-primary font-bold">problem statement:</span>
                                 <br />
                                 the pewter platformer faced a validation loop, where it kept asking questions to validate its design without calling any tool, i.e. making any real changes
                               </>
                             ) : section.richText && section.text === "solution" ? (
                               <>
-                                <span className="text-blue-500 font-bold">solution:</span>
+                                <span className="text-primary font-bold">solution:</span>
                                 <br />
                                 1. changed the system prompt to be 'action-first'
                                 <br />
@@ -127,9 +127,9 @@ const Projects = () => {
                               </>
                             ) : section.richText && section.text === "result" ? (
                               <>
-                                <span className="text-blue-500 font-bold">result:</span>
+                                <span className="text-primary font-bold">result:</span>
                                 <br />
-                                benchmarked over 30 test prompts: loop-rate <span className="text-blue-500 font-bold">78.7%</span> → <span className="text-blue-500 font-bold">46.3%</span>, significantly improving the agent's reliability and user experience.
+                                benchmarked over 30 test prompts: loop-rate <span className="text-primary font-bold">78.7%</span> → <span className="text-primary font-bold">46.3%</span>, significantly improving the agent's reliability and user experience.
                               </>
                             ) : (
                               section.text

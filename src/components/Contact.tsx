@@ -72,12 +72,6 @@ const Contact = () => {
                   <span className="text-sm text-muted-foreground">location:</span>
                   <span className="text-foreground">santa cruz, california</span>
                 </div>
-                <div className="flex items-center gap-3">
-                  <span className="text-sm text-muted-foreground">phone:</span>
-                  <a href="tel:+14085987970" className="text-foreground hover:text-primary transition-colors">
-                    +1 (408) 598-7970
-                  </a>
-                </div>
               </div>
             </CardDescription>
           </CardHeader>

@@ -11,19 +11,19 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-sm border-b border-border">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <Link to="/" className="text-xl font-bold text-foreground hover:text-primary transition-colors">
-          Ashmita Dua
+          ashmita
         </Link>
         
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-6">
           <Link to="/projects-grid" className="text-foreground hover:text-primary transition-colors">
-            Projects
+            projects
           </Link>
           <Link to="/blog" className="text-foreground hover:text-primary transition-colors">
-            Blog
+            blog/notes
           </Link>
           <Link to="/resume" className="text-foreground hover:text-primary transition-colors">
-            Resume
+            resume
           </Link>
           <ThemeToggle />
         </div>
@@ -51,21 +51,21 @@ const Navbar = () => {
               className="text-foreground hover:text-primary transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Projects
+              projects
             </Link>
             <Link 
               to="/blog" 
               className="text-foreground hover:text-primary transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Blog
+              blog/notes
             </Link>
             <Link 
               to="/resume" 
               className="text-foreground hover:text-primary transition-colors py-2"
               onClick={() => setMobileMenuOpen(false)}
             >
-              Resume
+              resume
             </Link>
           </div>
         </div>

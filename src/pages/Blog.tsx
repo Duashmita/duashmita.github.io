@@ -22,9 +22,9 @@ const Blog = () => {
       <main className="flex-1 pt-24 pb-16">
         <div className="container mx-auto max-w-6xl px-4">
           <header className="mb-16 text-center">
-            <h1 className="mb-4">Blog</h1>
+            <h1 className="mb-4">blog</h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Thoughts on development, design, and everything in between
+              thoughts on development, design, and everything in between
             </p>
           </header>
 
@@ -63,7 +63,7 @@ const Blog = () => {
                     </div>
                     <Button asChild variant="ghost" className="group/btn shrink-0 hover-scale">
                       <Link to={`/blog/${post.slug}`} aria-label={`Read more: ${post.title}`}>
-                        Read More
+                        read more
                         <ArrowRight className="h-4 w-4 ml-2 transition-transform group-hover/btn:translate-x-1" />
                       </Link>
                     </Button>

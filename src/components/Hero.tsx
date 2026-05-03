@@ -8,10 +8,10 @@ const Hero = () => {
       <div className="container mx-auto max-w-6xl px-0 py-20 md:py-24">
         <div className="max-w-2xl pt-8 md:pt-12 pl-4 md:pl-8">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 leading-tight">
-            Hi! I am Ashmita Dua
+            hi! I am ashmita
           </h1>
-          <p className="text-lg md:text-xl text-white/90 max-w-2xl font-mono mb-8">
-            Computer Science student at UC Santa Cruz specializing in Game Design, AI/ML, and creative technology
+          <p className="text-lg md:text-xl text-white/90 max-w-2xl font-mono mb-8 italic">
+            a nerd of creating and studying interactive beatiful environments utilising ai/ml.
           </p>
           
           <div className="flex gap-4">

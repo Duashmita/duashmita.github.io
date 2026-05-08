@@ -10,8 +10,30 @@ import BlogPost from "./pages/BlogPost";
 import Resume from "./pages/Resume";
 import ProjectsGrid from "./pages/ProjectsGrid";
 import NotFound from "./pages/NotFound";
+import CursorGlow from "./components/CursorGlow";
+import useScrollReveal from "./hooks/useScrollReveal";
 
 const queryClient = new QueryClient();
+
+const AppInner = () => {
+  useScrollReveal();
+  return (
+    <>
+      <CursorGlow />
+      <HashRouter>
+        <Routes>
+          <Route path="/" element={<Index />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/projects-grid" element={<ProjectsGrid />} />
+          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </HashRouter>
+    </>
+  );
+};
 
 const App = () => (
   <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
@@ -19,17 +41,7 @@ const App = () => (
       <TooltipProvider>
         <Toaster />
         <Sonner />
-        <HashRouter>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/blog/:slug" element={<BlogPost />} />
-            <Route path="/resume" element={<Resume />} />
-            <Route path="/projects-grid" element={<ProjectsGrid />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </HashRouter>
+        <AppInner />
       </TooltipProvider>
     </QueryClientProvider>
   </ThemeProvider>

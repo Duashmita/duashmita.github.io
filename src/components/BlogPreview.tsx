@@ -11,11 +11,11 @@ const BlogPreview = () => {
       <div className="container mx-auto max-w-6xl">
         <h2 className="text-3xl md:text-4xl font-bold text-primary mb-8">blog / notes</h2>
         <div className="grid md:grid-cols-2 gap-6">
-          {posts.map((post) => (
+          {posts.map((post, i) => (
             <Link
               key={post.slug}
               to={`/blog/${post.slug}`}
-              className="glass-card rounded-2xl p-6 md:p-7 transition-transform hover:-translate-y-1 group block"
+              className={`glass-card rounded-2xl p-6 md:p-7 transition-all hover:-translate-y-2 hover:shadow-lg group block scroll-reveal reveal-delay-${i + 1}`}
             >
               <div className="flex items-center gap-2 mb-3 text-primary">
                 <BookOpen className="h-4 w-4" />
